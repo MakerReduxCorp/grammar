@@ -1,0 +1,48 @@
+
+
+
+workstep letterhead1
+    version 1.0
+    maker printer_company
+    industry printing
+    function letterhead
+    #
+    paper_size 8.5x11
+    color_method offset_spot
+    pantone 1925
+        spot_pdf_file "mycompany-color-a.pdf"
+    pantone 240
+        spot_pdf_file "mycompany-color-b.pdf"
+    pantone 617
+        spot_pdf_file "mycompany-color-c.pdf"
+    paper_basis_weight 28lb_writing
+    paper_texture wove
+    bleed yes
+    sides 1
+    paper_packaging boxed
+    output printjob
+        qty 6000
+    
+workstep another_letterhead_job
+    version 1.0
+    maker printer_company
+    industry printing
+    function letterhead
+    #
+    paper_size custom
+    horizontal_paper_length 7.8in
+    vertical_paper_length 9in
+    color_method CMYK_process
+    cyan_pdf_file "joe-cyan.pdf"
+    magenta_pdf_file "joe-magenta.pdf"
+    yellow_pdf_file "joe-yellow.pdf"
+    key_pdf_file "joe-black.pdf"
+    paper_basis_weight 24lb_writing
+    paper_texture linen
+    sides 1
+    slip_sheet_count 100
+    paper_packaging ream_wrapped
+    #
+    output printjob
+        qty 10
+        
