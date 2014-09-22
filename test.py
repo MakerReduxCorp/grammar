@@ -1,16 +1,10 @@
 import sys, os, getopt
-# the action below is a no-no in standard python, but it is done here for
-# easy on-the-fly testing.
 
-# this setup assumes that MARDS is NOT in the python library on the local
-# machine, but is instead in a parrallel directory.
-sys.path.append(os.path.join(os.path.dirname(sys.argv[0]), '..'))
-#print sys.path
 import MARDS
 
 def main(argv):
-   inputfile = ''
-   sfile = 'mr recipe.MARDS-schema'
+   inputfile = 'examples/bling.MARDS'
+   sfile = 'src/V1/index.MARDS-schema'
    debug = False
    try:
       opts, args = getopt.getopt(argv,"hdi:s:",["ifile=","sfile=","debug"])
@@ -19,7 +13,7 @@ def main(argv):
       sys.exit(2)
    for opt, arg in opts:
       if opt == '-h':
-         print 'export-test.py -i <ifile> -s <sfile> (default = mr recipe.MARDS-schema> -d <debug>'
+         print 'test.py -i <ifile> -s <sfile> (default = mr recipe.MARDS-schema> -d <debug>'
          sys.exit()
       elif opt in ("-i", "--ifile"):
          inputfile = arg
@@ -38,7 +32,7 @@ def main(argv):
    if debug == True:
       x,e = MARDS.ml.SCHEMA_to_rolne(schema)
    else:
-      x,e = MARDS.string_to_rolne(doc, schema)
+      x,e = MARDS.string_to_rolne(doc, schema_file=sfile)
    
    print "FINAL:\n"
    print x._explicit()
