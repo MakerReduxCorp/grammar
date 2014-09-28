@@ -36,8 +36,10 @@ template parts_grammar
     search label
         match 'lumber'
             extend lumber
+                from woodworking_grammar
         match 'wood_panel' 
             extend wood_panel
+                from woodworking_grammar
         match 'from_distributor'
             extend from_distributor
         match 'open'
