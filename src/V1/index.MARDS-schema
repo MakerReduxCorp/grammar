@@ -97,6 +97,10 @@ name parameter
             value
                 required
                 default "mr0.1"
+        describe en 
+            title "System Version"
+            abstract "The version of Maker Redux's recipe system that this was defined with."
+            body "A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with."
     name description
         treatment sum
     name type
@@ -122,6 +126,10 @@ name workstep
         type label
         required
     treatment unique
+    describe en 
+        title "Workstep"
+        abstract "A single step in the process of building the final product."
+        body "A workstep is a description of what must be *done* to completely build a product. Worksteps generally 'input' parts first, have a 'maker' then 'do stuff', and then 'output' parts."
     name __origin_id
         treatment one
         value
@@ -132,8 +140,16 @@ name workstep
             value
                 required
                 default "mr0.1"
+        describe en 
+            title "System Version"
+            abstract "The version of Maker Redux's recipe system that this was defined with."
+            body "A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with."
     name description
         treatment sum
+        describe en 
+            title "Description"
+            abstract "A general description of this workstep."
+            body "A generate description of this workstep. While most of the attributes are for possible automation, this attribute is free-form and meant to be read by other people."
     name maker
         treatment one
         required
@@ -141,17 +157,18 @@ name workstep
             type label
             required
             default default_maker
-    name typical_cost
-        treatment one
-        required
-        value
-            type price
-            required
-            default 0
+        describe en 
+            title "Maker Label"
+            abstract "The label of the maker role assigned to perform this workstep."
+            body "The label of the maker role assigned to perform this workstep."
     name input
         value
             type label
             required
+        describe en 
+            title "Input Part"
+            abstract "A part (or workstep output) to be consumed by this workstep."
+            body "If part(s) are needed to perform this workstep, then the 'input' attributes declare those inputs. Add one 'input' for each unique part needed. If the name given for the 'input' is not a known part, the system checks to see if there is a workstep with a matching name that does not have a named output. If that isn't found, then the system *automatically* creates the part and begins tracking it."
         name qty
             treatment one
             required
@@ -160,6 +177,10 @@ name workstep
                     min 1
                 required
                 default 1
+            describe en 
+                title "Quantity Needed"
+                abstract "The number of parts needed."
+                body "If you need more than one (1) of the part, then add a 'qty' attribute to tell the system the total needed. If you don't add a 'qty' the system defaults to 1."
     name output
         value
             type label
@@ -196,6 +217,40 @@ name workstep
         value
             required
             type qty
+    name estimates
+        treatment one
+        value
+            type ignored
+        name prototype_price
+            treatment one
+            value
+                required
+                type price
+        name prototype_time
+            treatment one
+            value
+                required
+                type duration
+        name pilot_price
+            treatment one
+            value
+                required
+                type price
+        name pilot_time
+            treatment one
+            value
+                required
+                type duration
+        name production_price
+            treatment one
+            value
+                required
+                type price
+        name production_time
+            treatment one
+            value
+                required
+                type duration
     name industry
     ## was formerly called 'station'
         treatment one

@@ -19,7 +19,7 @@ print "  Erasing previous content..."
 if not os.path.exists(dest_dir):
     os.makedirs(dest_dir)
 else:
-    files = glob.glob(dest_dir+"/*")
+    files = glob.glob(dest_dir+"/*.rst")
     for f in files:
         os.remove(f)
 print "    done."
