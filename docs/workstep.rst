@@ -40,6 +40,8 @@ description : string
     
     
 maker : label
+    A *label* value is expected.
+    
     title: Maker Label
     
     abstract: The label of the maker role assigned to perform this workstep.
@@ -48,6 +50,8 @@ maker : label
     
     
 input : label
+    A *label* value is expected.
+    
     title: Input Part
     
     abstract: A part (or workstep output) to be consumed by this workstep.
@@ -57,6 +61,8 @@ input : label
     The following items can be below this attribute:
     
     qty : integer
+        A *integer* value is expected.
+        
         title: Quantity Needed
         
         abstract: The number of parts needed.
@@ -67,36 +73,60 @@ input : label
     
     
 output : label
+    A *label* value is expected.
+    
     The following items can be below this attribute:
     
     final : boolean
+        A *boolean* value is expected.
+        
         
     qty : integer
+        A *integer* value is expected.
+        
         
     
     
 instructions : string
     
 pre_event_timer : duration
+    A *duration* value is expected.
+    
     
 post_event_timer : duration
+    A *duration* value is expected.
+    
     
 repeat : qty
+    A *qty* value is expected.
     
-estimates : ignored
+    
+estimates : ignore
     The following items can be below this attribute:
     
     prototype_price : price
+        A *price* value is expected.
+        
         
     prototype_time : duration
+        A *duration* value is expected.
+        
         
     pilot_price : price
+        A *price* value is expected.
+        
         
     pilot_time : duration
+        A *duration* value is expected.
+        
         
     production_price : price
+        A *price* value is expected.
+        
         
     production_time : duration
+        A *duration* value is expected.
+        
         
     
     

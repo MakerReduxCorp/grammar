@@ -22,6 +22,8 @@ version : string
 description : string
     
 type : label
+    A *label* value is expected.
+    
     
 title : string
     

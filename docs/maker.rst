@@ -32,6 +32,8 @@ version : string
     
     
 company_id : hexadecimal
+    A *hexadecimal* value is expected.
+    
     title: Company ID
     
     abstract: The Maker Redux ID code of the suggested or original company to use in this Maker Role

@@ -220,7 +220,7 @@ name workstep
     name estimates
         treatment one
         value
-            type ignored
+            type ignore
         name prototype_price
             treatment one
             value
