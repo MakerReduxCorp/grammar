@@ -18,8 +18,8 @@ template printing_workstep_grammar
         ## match 'flyers'
         match 'small_bw_laser_print'
             extend small_bw_laser_print
-
-
+        match_else
+            raise_error "printing function not recognized"
 
 template letterhead
     describe en
@@ -33,7 +33,7 @@ template letterhead
                 choice '8.5x11'
                 choice '7.5x10'
                 choice 'custom'
-            default '8.5x11in'
+            default '8.5x11'
             describe en
                 title "size of paper"
     search paper_size
@@ -55,54 +55,43 @@ template letterhead
             required
             type radio_select
                 choice 'offset_spot'
+                    extend pantone_spot_color
+                        from printing_pantone_grammar
                 choice 'CMYK process'
+                    name cyan_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Cyan"
+                    name magenta_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Magenta"
+                    name yellow_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Yellow"
+                    name key_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Key (black)"
             describe en
                 title "method of printing the color"
-    search color_method
-        match 'spot'
-            import pantone
-                from printing_pantone_grammer
-                name spot_pdf_file
-                    treatment one
-                    required
-                    value
-                        required
-                        type file
-                        describe en
-                            title "PDF file containing image for this spot color"
-        match "CMYK process"
-            name cyan_pdf_file
-                treatment unique
-                required
-                value
-                    required
-                    type file
-                    describe en
-                        title "PDF file containing image for Cyan"
-            name magenta_pdf_file
-                treatment unique
-                required
-                value
-                    required
-                    type file
-                    describe en
-                        title "PDF file containing image for Magenta"
-            name yellow_pdf_file
-                treatment unique
-                required
-                value
-                    required
-                    type file
-                    describe en
-                        title "PDF file containing image for Yellow"
-            name key_pdf_file
-                treatment unique
-                required
-                value
-                    required
-                    type file
-                    describe en
-                        title "PDF file containing image for Key (black)"
     name paper_basis_weight
         treatment one
         value

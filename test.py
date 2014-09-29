@@ -37,7 +37,8 @@ def main(argv):
    print "FINAL:\n"
    print x._explicit()
    print "ERRORS:\n"
-   print repr(e)
+   for err in e:
+        print repr(err)
 
 if __name__ == "__main__":
    main(sys.argv[1:])
