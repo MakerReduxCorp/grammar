@@ -57,14 +57,26 @@ name maker
             type hexadecimal
             required
         describe en 
-            title "Company ID Code"
-            abstract "ID code of the suggested or original company to use in this Maker Role"
-            body "ID code of the suggested or original company to use in this Maker Role"
+            title "Company ID"
+            abstract "The Maker Redux ID code of the suggested or original company to use in this Maker Role"
+            body "The Maker Redux ID code of the suggested or original company to use in this Maker Role"
     name company_name
         treatment one
+        describe en
+            title "Company Name"
+            abstract "The name of the suggested or original company to use in this Maker Role"
+            body "The name of the suggested or original company to use in this Maker Role"
     name url
+        describe en
+            title "Web URL"
+            abstract "A link to the suggested or original company."
+            body "A link to the suggested or original company. Often, it is a web URL in the form of 'http://domain.com/'"
     name description
         treatment sum
+        describe en
+            title "Description"
+            abstract "A description of the maker."
+            body "An open description of the maker. Often the label given to the maker (such as 'woodshop' or 'printer') is sufficient to describe the makers role. But if additional information is helpfull, place that information in the description."
 ## #########################
 ##
 ##   PARAMETER
