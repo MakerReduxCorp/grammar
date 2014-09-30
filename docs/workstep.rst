@@ -17,7 +17,7 @@ A single step in the process of building the final product.
 Body
 ''''
 
-A workstep is a description of what must be *done* to completely build a product. Worksteps generally 'input' parts first, have a 'maker' then 'do stuff', and then 'output' parts.
+A workstep is a description of what must be *done* to completely build a part. Worksteps generally list 'input' parts first, have a 'maker' then 'do stuff', and then 'output' parts.
 
 ''''''''''
 Attributes
@@ -75,6 +75,12 @@ input : label
 output : label
     A *label* value is expected.
     
+    title: Output Part
+    
+    abstract: A part created by this workstep.
+    
+    body: The workstep will produce one or more parts.  If the parts are not explicitly declared, the system will automatically create parts with a name matching the workstep name.
+    
     The following items can be below this attribute:
     
     final : boolean
@@ -83,6 +89,12 @@ output : label
         
     qty : integer
         A *integer* value is expected.
+        
+        title: Quantity Produced
+        
+        abstract: The number of parts produced by the workstep
+        
+        body: A workstep may produce more than one part.  If you don't add a 'qty' the system defaults to 1.
         
         
     

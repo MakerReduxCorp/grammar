@@ -1,4 +1,4 @@
-part
+Part
 ====
 
 ''''''
@@ -6,6 +6,18 @@ Format
 ''''''
 
 part *label*
+
+''''''''
+Abstract
+''''''''
+
+A discrete component or subassembly of a product.  Parts may be created or consumed as a normal consequence of the manufacturing process.
+
+''''
+Body
+''''
+
+Parts are used in worksteps as both inputs and as outputs.  A part such as 'board' may be the input to a CNC operation that consumes the part and produces a new part such as 'right_side_frame'.
 
 ''''''''''
 Attributes

@@ -87,6 +87,11 @@ name parameter
         type label
         required
     treatment unique
+    describe en 
+        title "Parameter"
+        abstract "A variable piece of information used to customize the manufacturing process or product."
+        body "Parameters are used to describe variable parts of the product.  The value of the parameter will be established when the product is ordered.  For example, a string to be engraved on a product or a specific color choice."
+   
     name __origin_id
         treatment one
         value
@@ -129,7 +134,7 @@ name workstep
     describe en 
         title "Workstep"
         abstract "A single step in the process of building the final product."
-        body "A workstep is a description of what must be *done* to completely build a product. Worksteps generally 'input' parts first, have a 'maker' then 'do stuff', and then 'output' parts."
+        body "A workstep is a description of what must be *done* to completely build a part. Worksteps generally list 'input' parts first, have a 'maker' then 'do stuff', and then 'output' parts."
     name __origin_id
         treatment one
         value
@@ -185,6 +190,10 @@ name workstep
         value
             type label
             required
+        describe en 
+            title "Output Part"
+            abstract "A part created by this workstep."
+            body "The workstep will produce one or more parts.  If the parts are not explicitly declared, the system will automatically create parts with a name matching the workstep name." 
         name final
             treatment one
             value
@@ -198,6 +207,11 @@ name workstep
                     min 1
                 required
                 default 1
+            describe en 
+                title "Quantity Produced"
+                abstract "The number of parts produced by the workstep"
+                body "A workstep may produce more than one part.  If you don't add a 'qty' the system defaults to 1."
+    
     name instructions
         treatment sum
     name pre_event_timer
@@ -277,6 +291,11 @@ name part
         type label
         required
     treatment unique
+    describe en 
+        title "Part"
+        abstract "A discrete component or subassembly of a product.  Parts may be created or consumed as a normal consequence of the manufacturing process."
+        body "Parts are used in worksteps as both inputs and as outputs.  A part such as 'board' may be the input to a CNC operation that consumes the part and produces a new part such as 'right_side_frame'."
+
     name __origin_id
         treatment one
         value

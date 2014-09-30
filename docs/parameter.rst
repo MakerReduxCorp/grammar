@@ -1,4 +1,4 @@
-parameter
+Parameter
 =========
 
 ''''''
@@ -6,6 +6,18 @@ Format
 ''''''
 
 parameter *label*
+
+''''''''
+Abstract
+''''''''
+
+A variable piece of information used to customize the manufacturing process or product.
+
+''''
+Body
+''''
+
+Parameters are used to describe variable parts of the product.  The value of the parameter will be established when the product is ordered.  For example, a string to be engraved on a product or a specific color choice.
 
 ''''''''''
 Attributes
