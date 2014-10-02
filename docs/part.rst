@@ -51,18 +51,32 @@ qty *integer*
     A *integer* value is expected.
     
     
+estimates
+    The following items can be below this attribute:
+    
+        prototype_price *price*
+            A *price* value is expected.
+            
+            
+        pilot_price *price*
+            A *price* value is expected.
+            
+            
+        production_price *price*
+            A *price* value is expected.
+            
+            
+    
+    
 label *radio_select*
     The choice selected adds additional attributes. Click below to see them.
     
     choices:
     
-      * :doc:`label.lumber`
-    
-      * :doc:`label.wood_panel`
-    
-      * :doc:`label.from_distributor`
-    
-      * :doc:`label.open`
+      * :doc:`part.label.lumber`
+      * :doc:`part.label.wood_panel`
+      * :doc:`part.label.from_distributor`
+      * :doc:`part.label.open`
     
     
 ''''''''''

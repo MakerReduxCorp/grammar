@@ -16,41 +16,23 @@ top_surface *radio_select*
     choices:
     
       * oak
-    
       * pine
-    
       * walnut
-    
       * bubinga
-    
       * cypress
-    
       * fir
-    
       * hemlock
-    
       * maple
-    
       * cedar
-    
       * spruce
-    
       * ash
-    
       * padauk
-    
       * birch
-    
       * chestnut
-    
       * cherry
-    
       * ebony
-    
       * mahongony
-    
       * poplar
-    
       * bamboo
     
     
@@ -59,41 +41,23 @@ bottom_surface *radio_select*
     choices:
     
       * oak
-    
       * pine
-    
       * walnut
-    
       * bubinga
-    
       * cypress
-    
       * fir
-    
       * hemlock
-    
       * maple
-    
       * cedar
-    
       * spruce
-    
       * ash
-    
       * padauk
-    
       * birch
-    
       * chestnut
-    
       * cherry
-    
       * ebony
-    
       * mahongony
-    
       * poplar
-    
       * bamboo
     
     
@@ -102,9 +66,7 @@ top_quality *radio_select*
     choices:
     
       * fine
-    
       * medium
-    
       * course
     
     
@@ -113,9 +75,7 @@ bottom_quality *radio_select*
     choices:
     
       * fine
-    
       * medium
-    
       * course
     
     
@@ -136,7 +96,6 @@ core *radio_select*
     choices:
     
       * MDF
-    
       * layer
     
     

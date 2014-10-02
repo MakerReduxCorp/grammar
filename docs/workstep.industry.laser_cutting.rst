@@ -14,6 +14,6 @@ Variations
 
 There additional attributes based on **function** :
 
-  * :doc:`workstep.function.vector_cut`
-  * :doc:`workstep.function.vector_engrave`
-  * :doc:`workstep.function.raster_engrave`
+  * :doc:`workstep.industry.laser_cutting.function.vector_cut`
+  * :doc:`workstep.industry.laser_cutting.function.vector_engrave`
+  * :doc:`workstep.industry.laser_cutting.function.raster_engrave`

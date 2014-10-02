@@ -4,7 +4,7 @@ import MARDS
 
 def main(argv):
    inputfile = 'examples/bling.MARDS'
-   sfile = 'src/V1/index.MARDS-schema'
+   sfile = 'compiled/V1/index.MARDS-schema'
    debug = False
    try:
       opts, args = getopt.getopt(argv,"hdi:s:",["ifile=","sfile=","debug"])

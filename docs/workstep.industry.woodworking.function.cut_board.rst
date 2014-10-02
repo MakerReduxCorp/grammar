@@ -5,7 +5,7 @@ cut a board to specified dimensions
 Format
 ''''''
 
-workstep.function.cut_board *string*
+workstep.industry.woodworking.function.cut_board *string*
 
 ''''''''''
 Attributes

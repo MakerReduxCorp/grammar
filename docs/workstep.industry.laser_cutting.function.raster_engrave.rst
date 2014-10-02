@@ -5,7 +5,7 @@ laser engrave part(s)
 Format
 ''''''
 
-workstep.function.vector_engrave *string*
+workstep.industry.laser_cutting.function.raster_engrave *string*
 
 ''''''''''
 Attributes
@@ -27,11 +27,7 @@ ypos *integer*
     A *integer* value is expected.
     
     
-font_file *file*
+image *file*
     A *file* value is expected.
-    
-    
-engravestring *string*
-    A *string* value is expected.
     
     

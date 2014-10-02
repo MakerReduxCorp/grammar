@@ -5,7 +5,7 @@ laser cut part(s) from flatstock
 Format
 ''''''
 
-workstep.function.vector_cut *string*
+workstep.industry.laser_cutting.function.vector_cut *string*
 
 ''''''''''
 Attributes

@@ -1,0 +1,50 @@
+name "parameter"
+    value
+        type "label"
+        required
+    treatment "unique"
+    describe "en"
+        title "Parameter"
+        abstract "A variable piece of information used to customize the manufacturing process or product."
+        body "Parameters are used to describe variable parts of the product.  The value of the parameter will be established when the product is ordered.  For example, a string to be engraved on a product or a specific color choice."
+    name "__origin_id"
+        treatment "one"
+        value
+            type "hexadecimal"
+    name "version"
+        treatment "one"
+        required
+            value
+                required
+                default "mr0.1"
+        describe "en"
+            title "System Version"
+            abstract "The version of Maker Redux's recipe system that this was defined with."
+            body "A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with."
+        value
+            type "string"
+    name "description"
+        treatment "sum"
+        value
+            type "string"
+    name "type"
+        treatment "one"
+        required
+        value
+            type "label"
+            required
+    name "title"
+        treatment "one"
+        value
+            type "string"
+    name "default_value"
+        treatment "one"
+        value
+            type "string"
+    name "default_unit"
+        treatment "one"
+        value
+            type "string"
+    name "choices"
+        value
+            type "string"

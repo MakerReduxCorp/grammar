@@ -64,16 +64,16 @@ input *label*
     
     The following items can be below this attribute:
     
-    qty *integer*
-        A *integer* value is expected.
-        
-        title: Quantity Needed
-        
-        abstract: The number of parts needed.
-        
-        body: If you need more than one (1) of the part, then add a 'qty' attribute to tell the system the total needed. If you don't add a 'qty' the system defaults to 1.
-        
-        
+        qty *integer*
+            A *integer* value is expected.
+            
+            title: Quantity Needed
+            
+            abstract: The number of parts needed.
+            
+            body: If you need more than one (1) of the part, then add a 'qty' attribute to tell the system the total needed. If you don't add a 'qty' the system defaults to 1.
+            
+            
     
     
 output *label*
@@ -87,20 +87,20 @@ output *label*
     
     The following items can be below this attribute:
     
-    final *boolean*
-        A *boolean* value is expected.
-        
-        
-    qty *integer*
-        A *integer* value is expected.
-        
-        title: Quantity Produced
-        
-        abstract: The number of parts produced by the workstep
-        
-        body: A workstep may produce more than one part.  If you don't add a 'qty' the system defaults to 1.
-        
-        
+        final *boolean*
+            A *boolean* value is expected.
+            
+            
+        qty *integer*
+            A *integer* value is expected.
+            
+            title: Quantity Produced
+            
+            abstract: The number of parts produced by the workstep
+            
+            body: A workstep may produce more than one part.  If you don't add a 'qty' the system defaults to 1.
+            
+            
     
     
 instructions *string*
@@ -122,30 +122,30 @@ repeat *qty*
 estimates
     The following items can be below this attribute:
     
-    prototype_price *price*
-        A *price* value is expected.
-        
-        
-    prototype_time *duration*
-        A *duration* value is expected.
-        
-        
-    pilot_price *price*
-        A *price* value is expected.
-        
-        
-    pilot_time *duration*
-        A *duration* value is expected.
-        
-        
-    production_price *price*
-        A *price* value is expected.
-        
-        
-    production_time *duration*
-        A *duration* value is expected.
-        
-        
+        prototype_price *price*
+            A *price* value is expected.
+            
+            
+        prototype_time *duration*
+            A *duration* value is expected.
+            
+            
+        pilot_price *price*
+            A *price* value is expected.
+            
+            
+        pilot_time *duration*
+            A *duration* value is expected.
+            
+            
+        production_price *price*
+            A *price* value is expected.
+            
+            
+        production_time *duration*
+            A *duration* value is expected.
+            
+            
     
     
 industry *string*

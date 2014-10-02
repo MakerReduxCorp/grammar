@@ -5,7 +5,7 @@ CNC cut parts from panel flatstock
 Format
 ''''''
 
-workstep.function.cnc_panel *string*
+workstep.industry.woodworking.function.cnc_panel *string*
 
 ''''''''''
 Attributes

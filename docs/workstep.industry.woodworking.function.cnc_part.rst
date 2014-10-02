@@ -5,7 +5,7 @@ CNC surfacing of 3D model
 Format
 ''''''
 
-workstep.function.cnc_part *string*
+workstep.industry.woodworking.function.cnc_part *string*
 
 ''''''''''
 Attributes

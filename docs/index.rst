@@ -1,8 +1,8 @@
-=====
-index
-=====
+========================================
+Maker Redux Recipe Grammar Documentation
+========================================
 
-* :doc:`maker`
-* :doc:`parameter`
-* :doc:`part`
 * :doc:`workstep`
+* :doc:`maker`
+* :doc:`part`
+* :doc:`parameter`

@@ -1,11 +1,11 @@
-workstep.paper_size.custom
-==========================
+workstep.industry.printing.function.letterhead.paper_size.custom
+================================================================
 
 ''''''
 Format
 ''''''
 
-workstep.paper_size.custom *string*
+workstep.industry.printing.function.letterhead.paper_size.custom *string*
 
 ''''''''''
 Attributes

@@ -14,4 +14,4 @@ Variations
 
 There additional attributes based on **function** :
 
-  * :doc:`workstep.function.workbench`
+  * :doc:`workstep.industry.assembly.function.workbench`

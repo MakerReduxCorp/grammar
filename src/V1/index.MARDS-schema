@@ -340,5 +340,24 @@ name part
                 min 1
             required
             default 1
+    name estimates
+        treatment one
+        value
+            type ignore
+        name prototype_price
+            treatment one
+            value
+                required
+                type price
+        name pilot_price
+            treatment one
+            value
+                required
+                type price
+        name production_price
+            treatment one
+            value
+                required
+                type price
     extend parts_grammar
         from industry_grammar

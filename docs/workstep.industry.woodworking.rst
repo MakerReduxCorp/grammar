@@ -14,10 +14,10 @@ Variations
 
 There additional attributes based on **function** :
 
-  * :doc:`workstep.function.cut_board`
-  * :doc:`workstep.function.cnc_part`
-  * :doc:`workstep.function.cut_panel`
-  * :doc:`workstep.function.cnc_panel`
-  * :doc:`workstep.function.glue_assembly`
-  * :doc:`workstep.function.sand_part`
-  * :doc:`workstep.function.surface_finish`
+  * :doc:`workstep.industry.woodworking.function.cut_board`
+  * :doc:`workstep.industry.woodworking.function.cnc_part`
+  * :doc:`workstep.industry.woodworking.function.cut_panel`
+  * :doc:`workstep.industry.woodworking.function.cnc_panel`
+  * :doc:`workstep.industry.woodworking.function.glue_assembly`
+  * :doc:`workstep.industry.woodworking.function.sand_part`
+  * :doc:`workstep.industry.woodworking.function.surface_finish`

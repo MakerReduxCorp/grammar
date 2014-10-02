@@ -14,5 +14,5 @@ Variations
 
 There additional attributes based on **function** :
 
-  * :doc:`workstep.function.letterhead`
-  * :doc:`workstep.function.small_bw_laser_print`
+  * :doc:`workstep.industry.printing.function.letterhead`
+  * :doc:`workstep.industry.printing.function.small_bw_laser_print`

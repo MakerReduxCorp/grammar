@@ -16,21 +16,13 @@ thickness *radio_select*
     choices:
     
       * 1/4
-    
       * 1/2
-    
       * 3/4
-    
       * 4/4
-    
       * 5/4
-    
       * 6/4
-    
       * 8/4
-    
       * 10/4
-    
       * 12/4
     
     title: nominal thickness of raw stock
@@ -49,41 +41,23 @@ species *radio_select*
     choices:
     
       * oak
-    
       * pine
-    
       * walnut
-    
       * bubinga
-    
       * cypress
-    
       * fir
-    
       * hemlock
-    
       * maple
-    
       * cedar
-    
       * spruce
-    
       * ash
-    
       * padauk
-    
       * birch
-    
       * chestnut
-    
       * cherry
-    
       * ebony
-    
       * mahongony
-    
       * poplar
-    
       * bamboo
     
     
@@ -92,13 +66,9 @@ surface_finish *radio_select*
     choices:
     
       * rough
-    
       * S1S
-    
       * S2S
-    
       * S3S
-    
       * S4S
     
     

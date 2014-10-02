@@ -14,4 +14,4 @@ Variations
 
 There additional attributes based on **function** :
 
-  * :doc:`workstep.function.package`
+  * :doc:`workstep.industry.shipping.function.package`

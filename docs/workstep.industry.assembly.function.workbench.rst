@@ -5,5 +5,5 @@ assemble parts into higher level assembly
 Format
 ''''''
 
-workstep.function.workbench *string*
+workstep.industry.assembly.function.workbench *string*
 

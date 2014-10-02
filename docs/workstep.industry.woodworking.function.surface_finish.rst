@@ -1,17 +1,17 @@
-assemble parts with adhesive and timed curing
-=============================================
+apply surface finish and timed drying
+=====================================
 
 ''''''
 Format
 ''''''
 
-workstep.function.glue_assembly *string*
+workstep.industry.woodworking.function.surface_finish *string*
 
 ''''''''''
 Attributes
 ''''''''''
 
-adhesive *string*
+finishing_agent *string*
     A *string* value is expected.
     
     

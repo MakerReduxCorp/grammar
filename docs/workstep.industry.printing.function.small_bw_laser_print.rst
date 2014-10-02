@@ -5,7 +5,7 @@ print black/white on a consumer-grade SOHO laser printer
 Format
 ''''''
 
-workstep.function.small_bw_laser_print *string*
+workstep.industry.printing.function.small_bw_laser_print *string*
 
 ''''''''''
 Attributes
@@ -24,15 +24,10 @@ paper *radio_select*
     choices:
     
       * 24lb_letter
-    
       * 32lb_letter
-    
       * 24lb_96_brightness_letter
-    
       * 65lb_white_coverstock_letter
-    
       * Avery_5165_full-sheet_label
-    
       * 24lb_legal
     
     

@@ -2,7 +2,7 @@
 ## to break down the index.MARDS-schema schema into RST files.
 
 root index
-    title "Recipe Grammar Documentation"
+    title "Maker Redux Recipe Grammar Documentation"
     add_body_file intro.rst
 
     sub workstep
