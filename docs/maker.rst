@@ -23,7 +23,9 @@ A 'maker' is a specific role played by a manufacturer. One or more parts and/or 
 Attributes
 ''''''''''
 
-version : string
+version *string*
+    A *string* value is expected.
+    
     title: Version to Interpret By
     
     abstract: The version of Maker Redux Recipe that this was defined.
@@ -31,7 +33,7 @@ version : string
     body: A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with.
     
     
-company_id : hexadecimal
+company_id *hexadecimal*
     A *hexadecimal* value is expected.
     
     title: Company ID
@@ -41,7 +43,9 @@ company_id : hexadecimal
     body: The Maker Redux ID code of the suggested or original company to use in this Maker Role
     
     
-company_name : string
+company_name *string*
+    A *string* value is expected.
+    
     title: Company Name
     
     abstract: The name of the suggested or original company to use in this Maker Role
@@ -49,7 +53,9 @@ company_name : string
     body: The name of the suggested or original company to use in this Maker Role
     
     
-url : string
+url *string*
+    A *string* value is expected.
+    
     title: Web URL
     
     abstract: A link to the suggested or original company.
@@ -57,7 +63,9 @@ url : string
     body: A link to the suggested or original company. Often, it is a web URL in the form of 'http://domain.com/'
     
     
-description : string
+description *string*
+    A *string* value is expected.
+    
     title: Description
     
     abstract: A description of the maker.

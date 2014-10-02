@@ -23,7 +23,9 @@ Parameters are used to describe variable parts of the product.  The value of the
 Attributes
 ''''''''''
 
-version : string
+version *string*
+    A *string* value is expected.
+    
     title: System Version
     
     abstract: The version of Maker Redux's recipe system that this was defined with.
@@ -31,17 +33,27 @@ version : string
     body: A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with.
     
     
-description : string
+description *string*
+    A *string* value is expected.
     
-type : label
+    
+type *label*
     A *label* value is expected.
     
     
-title : string
+title *string*
+    A *string* value is expected.
     
-default_value : string
     
-default_unit : string
+default_value *string*
+    A *string* value is expected.
     
-choices : string
+    
+default_unit *string*
+    A *string* value is expected.
+    
+    
+choices *string*
+    A *string* value is expected.
+    
     

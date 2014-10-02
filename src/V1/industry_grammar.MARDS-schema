@@ -35,6 +35,15 @@ template workstep_grammar
             raise_error "workstep industry not recognized"
 
 template parts_grammar
+    name label
+        required
+        value
+            type radio_select
+                choice 'lumber'
+                choice 'wood_panel' 
+                choice 'from_distributor'
+                choice 'open'
+            required
     search label
         match 'lumber'
             extend lumber
@@ -46,8 +55,6 @@ template parts_grammar
             extend from_distributor
         match 'open'
             extend open
-        match_else
-            raise_error "part category not recognized"
 
     
 

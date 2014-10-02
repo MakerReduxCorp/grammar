@@ -23,31 +23,56 @@ Parts are used in worksteps as both inputs and as outputs.  A part such as 'boar
 Attributes
 ''''''''''
 
-version : string
+version *string*
+    A *string* value is expected.
     
-description : string
     
-maker : label
+description *string*
+    A *string* value is expected.
+    
+    
+maker *label*
     A *label* value is expected.
     
     
-typical_cost : price
+typical_cost *price*
     A *price* value is expected.
     
     
-sku_source : string
+sku_source *string*
     A *string* value is expected.
     
     
-sku : string
+sku *string*
     A *string* value is expected.
     
     
-qty : integer
+qty *integer*
     A *integer* value is expected.
     
     
-label : label
-    A *label* value is expected.
+label *radio_select*
+    The choice selected adds additional attributes. Click below to see them.
+    
+    choices:
+    
+      * :doc:`label.lumber`
+    
+      * :doc:`label.wood_panel`
+    
+      * :doc:`label.from_distributor`
+    
+      * :doc:`label.open`
     
     
+''''''''''
+Variations
+''''''''''
+
+
+There additional attributes based on **label** :
+
+  * :doc:`part.label.lumber`
+  * :doc:`part.label.wood_panel`
+  * :doc:`part.label.from_distributor`
+  * :doc:`part.label.open`

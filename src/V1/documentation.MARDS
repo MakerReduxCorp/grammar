@@ -8,20 +8,12 @@ root index
     sub workstep
         title "Worksteps"
         new_doc true
-        sub industry
-            title "Industries"
-            new_doc true
-            sub function
-                title "Function"
-                output "worksteps.rst"
     sub maker    
         title "Makers"
         new_doc true
     sub part
         title "Parts"
         new_doc true
-        sub category
-            Title "Category"
     sub parameter
         title "Parameters"
         new_doc true

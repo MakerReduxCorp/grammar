@@ -23,7 +23,9 @@ A workstep is a description of what must be *done* to completely build a part. W
 Attributes
 ''''''''''
 
-version : string
+version *string*
+    A *string* value is expected.
+    
     title: System Version
     
     abstract: The version of Maker Redux's recipe system that this was defined with.
@@ -31,7 +33,9 @@ version : string
     body: A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with.
     
     
-description : string
+description *string*
+    A *string* value is expected.
+    
     title: Description
     
     abstract: A general description of this workstep.
@@ -39,7 +43,7 @@ description : string
     body: A generate description of this workstep. While most of the attributes are for possible automation, this attribute is free-form and meant to be read by other people.
     
     
-maker : label
+maker *label*
     A *label* value is expected.
     
     title: Maker Label
@@ -49,7 +53,7 @@ maker : label
     body: The label of the maker role assigned to perform this workstep.
     
     
-input : label
+input *label*
     A *label* value is expected.
     
     title: Input Part
@@ -60,7 +64,7 @@ input : label
     
     The following items can be below this attribute:
     
-    qty : integer
+    qty *integer*
         A *integer* value is expected.
         
         title: Quantity Needed
@@ -72,7 +76,7 @@ input : label
         
     
     
-output : label
+output *label*
     A *label* value is expected.
     
     title: Output Part
@@ -83,11 +87,11 @@ output : label
     
     The following items can be below this attribute:
     
-    final : boolean
+    final *boolean*
         A *boolean* value is expected.
         
         
-    qty : integer
+    qty *integer*
         A *integer* value is expected.
         
         title: Quantity Produced
@@ -99,50 +103,68 @@ output : label
         
     
     
-instructions : string
+instructions *string*
+    A *string* value is expected.
     
-pre_event_timer : duration
+    
+pre_event_timer *duration*
     A *duration* value is expected.
     
     
-post_event_timer : duration
+post_event_timer *duration*
     A *duration* value is expected.
     
     
-repeat : qty
+repeat *qty*
     A *qty* value is expected.
     
     
-estimates : ignore
+estimates
     The following items can be below this attribute:
     
-    prototype_price : price
+    prototype_price *price*
         A *price* value is expected.
         
         
-    prototype_time : duration
+    prototype_time *duration*
         A *duration* value is expected.
         
         
-    pilot_price : price
+    pilot_price *price*
         A *price* value is expected.
         
         
-    pilot_time : duration
+    pilot_time *duration*
         A *duration* value is expected.
         
         
-    production_price : price
+    production_price *price*
         A *price* value is expected.
         
         
-    production_time : duration
+    production_time *duration*
         A *duration* value is expected.
         
         
     
     
-industry : string
+industry *string*
+    A *string* value is expected.
     
-function : string
     
+function *string*
+    A *string* value is expected.
+    
+    
+''''''''''
+Variations
+''''''''''
+
+
+There additional attributes based on **industry** :
+
+  * :doc:`workstep.industry.woodworking`
+  * :doc:`workstep.industry.laser_cutting`
+  * :doc:`workstep.industry.printing`
+  * :doc:`workstep.industry.assembly`
+  * :doc:`workstep.industry.shipping`
