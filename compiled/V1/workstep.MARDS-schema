@@ -214,6 +214,8 @@ name "workstep"
                         value
                             required
                             type "duration"
+                match_else
+                    raise_error "function does not exist"
         match "laser_cutting"
             search "function"
                 match "vector_cut"
@@ -252,7 +254,7 @@ name "workstep"
                             type "string"
                 match "raster_engrave"
                     describe "en"
-                        title "laser engrave part(s)"
+                        title "Raster engrave part(s)"
                     name "part_file"
                         value
                             required
@@ -269,6 +271,8 @@ name "workstep"
                     name "image"
                         value
                             type "file"
+                match_else
+                    raise_error "function doesn't exist"
         match "printing"
             search "function"
                 match "letterhead"
