@@ -13,6 +13,8 @@ template laser_cutting_workstep_grammar
             extend vector_engrave
         match 'raster_engrave'
             extend raster_engrave
+        match_else
+            raise_error "function doesn't exist"
 
 template vector_cut
     describe en 
@@ -52,7 +54,7 @@ template vector_engrave
                 
 template raster_engrave
     describe en 
-        title "laser engrave part(s)"   
+        title "Raster engrave part(s)"   
     name part_file
         value
             required

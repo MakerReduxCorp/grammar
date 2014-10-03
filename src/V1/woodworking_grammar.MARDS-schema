@@ -21,6 +21,8 @@ template woodworking_workstep_grammar
             extend sand_part
         match 'surface_finish'
             extend woodworking.surface_finish
+        match_else
+            raise_error 'function does not exist'
 
 template cut_board
     describe en 
