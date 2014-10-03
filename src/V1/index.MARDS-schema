@@ -315,13 +315,6 @@ name part
             type label
             required
             default default_maker
-    name typical_cost
-        treatment one
-        required
-        value
-            type price
-            required
-            default 0
     name sku_source
         treatment one
         value

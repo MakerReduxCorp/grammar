@@ -68,15 +68,8 @@ estimates
             
     
     
-label *radio_select*
-    The choice selected adds additional attributes. Click below to see them.
-    
-    choices:
-    
-      * :doc:`part.label.lumber`
-      * :doc:`part.label.wood_panel`
-      * :doc:`part.label.from_distributor`
-      * :doc:`part.label.open`
+category *label*
+    A *label* value is expected.
     
     
 ''''''''''
@@ -84,9 +77,9 @@ Variations
 ''''''''''
 
 
-There additional attributes based on **label** :
+There additional attributes based on **category** :
 
-  * :doc:`part.label.lumber`
-  * :doc:`part.label.wood_panel`
-  * :doc:`part.label.from_distributor`
-  * :doc:`part.label.open`
+  * :doc:`part.category.lumber`
+  * :doc:`part.category.wood_panel`
+  * :doc:`part.category.from_distributor`
+  * :doc:`part.category.open`

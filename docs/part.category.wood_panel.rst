@@ -5,7 +5,7 @@ Flat stock lumber (Plywood, MDF, particle board, etc)
 Format
 ''''''
 
-part.label.wood_panel *string*
+part.category.wood_panel *string*
 
 ''''''''''
 Attributes

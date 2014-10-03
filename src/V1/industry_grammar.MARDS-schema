@@ -35,16 +35,12 @@ template workstep_grammar
             raise_error "workstep industry not recognized"
 
 template parts_grammar
-    name label
+    name category
         required
         value
-            type radio_select
-                choice 'lumber'
-                choice 'wood_panel' 
-                choice 'from_distributor'
-                choice 'open'
+            type label
             required
-    search label
+    search category
         match 'lumber'
             extend lumber
                 from woodworking_grammar

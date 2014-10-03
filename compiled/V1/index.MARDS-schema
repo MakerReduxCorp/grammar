@@ -1583,13 +1583,6 @@ name "part"
             type "label"
             required
             default "default_maker"
-    name "typical_cost"
-        treatment "one"
-        required
-        value
-            type "price"
-            required
-            default "0"
     name "sku_source"
         treatment "one"
         value
@@ -1627,16 +1620,12 @@ name "part"
             value
                 required
                 type "price"
-    name "label"
+    name "category"
         required
         value
-            type "radio_select"
-                choice "lumber"
-                choice "wood_panel"
-                choice "from_distributor"
-                choice "open"
+            type "label"
             required
-    search "label"
+    search "category"
         match "lumber"
             name "thickness"
                 value

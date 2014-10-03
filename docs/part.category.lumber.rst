@@ -1,11 +1,11 @@
-part.label.lumber
-=================
+part.category.lumber
+====================
 
 ''''''
 Format
 ''''''
 
-part.label.lumber *string*
+part.category.lumber *string*
 
 ''''''''''
 Attributes

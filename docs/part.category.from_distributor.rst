@@ -5,7 +5,7 @@ Part ordered from a vendor with no additional processing required
 Format
 ''''''
 
-part.label.from_distributor *string*
+part.category.from_distributor *string*
 
 ''''''''''
 Attributes

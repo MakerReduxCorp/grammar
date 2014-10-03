@@ -5,5 +5,5 @@ this page intentionally left blank
 Format
 ''''''
 
-part.label.open *string*
+part.category.open *string*
 
