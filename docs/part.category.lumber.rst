@@ -32,7 +32,11 @@ minimum_width *length*
     A *length* value is expected.
     
     
-board_feet_at_minimum *length*
+minimum_length *length*
+    A *length* value is expected.
+    
+    
+board_feet *length*
     A *length* value is expected.
     
     

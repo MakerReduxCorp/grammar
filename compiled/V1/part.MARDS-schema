@@ -75,6 +75,7 @@ name "part"
     search "category"
         match "lumber"
             name "thickness"
+                required
                 value
                     required
                     type "radio_select"
@@ -93,11 +94,16 @@ name "part"
                 value
                     required
                     type "length"
-            name "board_feet_at_minimum"
+            name "minimum_length"
+                value
+                    required
+                    type "length"
+            name "board_feet"
                 value
                     required
                     type "length"
             name "species"
+                required
                 value
                     required
                     type "radio_select"
@@ -121,6 +127,7 @@ name "part"
                         choice "poplar"
                         choice "bamboo"
             name "surface_finish"
+                required
                 value
                     required
                     type "radio_select"

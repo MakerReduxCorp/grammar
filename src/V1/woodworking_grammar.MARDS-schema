@@ -65,6 +65,14 @@ template cnc_panel
         value
             required
             type file
+            
+template cnc_lathe
+    describe en
+        title "cut parts on a lathe (CNC with Spindle)"
+    name part_file
+        value
+            required
+            type file
 
 template glue_assembly
     describe en 
@@ -126,6 +134,7 @@ name species_choice
 
 template lumber
     name thickness
+        required
         value
             required
             type radio_select
@@ -144,17 +153,22 @@ template lumber
         value
             required
             type length
-    name board_feet_at_minimum
+    name minimum_length
+        value
+            required
+            type length
+    name board_feet
         value
             required
             type length
     
     name species
+        required
         value
             required
             extend species_choice
-
     name surface_finish
+        required
         value
             required
             type radio_select
@@ -163,7 +177,25 @@ template lumber
                 choice S2S
                 choice S3S
                 choice S4S 
-        
+
+template wood_round_stock
+    name diameter
+        required
+        value
+            required
+            type length
+        describe en
+            title "nominal diameter of stock"
+    name minimum_length
+        value
+            required
+            type length
+    name species
+        required
+        value
+            required
+            extend species_choice
+                
 template wood_panel
     describe en 
         title "Flat stock lumber (Plywood, MDF, particle board, etc)"
