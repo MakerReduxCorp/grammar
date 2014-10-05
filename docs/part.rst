@@ -77,6 +77,6 @@ There additional attributes based on **category** :
 
   * :doc:`part.category.lumber`
   * :doc:`part.category.wood_panel`
-  * :doc:`part.category.round_wood_stock`
+  * :doc:`part.category.wood_round_stock`
   * :doc:`part.category.from_distributor`
   * :doc:`part.category.open`

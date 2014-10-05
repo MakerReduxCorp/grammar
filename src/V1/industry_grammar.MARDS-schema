@@ -47,8 +47,8 @@ template parts_grammar
         match 'wood_panel' 
             extend wood_panel
                 from woodworking_grammar
-        match 'round_wood_stock' 
-            extend round_wood_stock
+        match 'wood_round_stock' 
+            extend wood_round_stock
                 from woodworking_grammar
         match 'from_distributor'
             extend from_distributor
