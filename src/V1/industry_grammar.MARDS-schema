@@ -47,10 +47,15 @@ template parts_grammar
         match 'wood_panel' 
             extend wood_panel
                 from woodworking_grammar
+        match 'round_wood_stock' 
+            extend round_wood_stock
+                from woodworking_grammar
         match 'from_distributor'
             extend from_distributor
         match 'open'
             extend open
+        match_else
+            raise_error "category not recognized"
 
     
 
