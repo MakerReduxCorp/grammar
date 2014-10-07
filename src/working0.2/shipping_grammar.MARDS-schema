@@ -1,0 +1,36 @@
+#!MARDS_schema_en_1.0 shipping_grammar_0.2
+describe en
+    title "Shipping"
+    abstract "Preparation of materials for transport by a third party carrier.  Includes packaging, labeling, and handling instructions."
+    body "The shipping grammar includes functions related to getting physical goods ready to be handled by a shipper"   body "The grammar will focus on the differences between 'packaging' (ie. the outward facing carton, crate, box, or envelope)"
+    body "and 'fill' (ie the cushioning material between the product and the package)" 
+
+## #######################
+##
+## Worksteps
+##
+## #######################
+
+template shipping_workstep_grammar
+    search function
+        match 'package'
+            extend package
+
+template package
+    describe en 
+        title "pack materials for shipping"
+    name fill
+        value
+            required
+            type radio_select
+                choice "starch_peanuts"
+                choice preform_styro
+        describe en
+            title "material to fill around shipped parts"
+
+
+## #######################
+##
+## Parts
+##
+## #######################

@@ -2,13 +2,19 @@ import sys, os, glob
 
 import MARDS
 
-schema_file = 'src/V1/index.MARDS-schema'
+# ver = "latest"
+ver = "working0.2"
+# ver = "0.0"
+
+schema_file = 'src/'+ver+'/index.MARDS-schema'
 print 'Schema file is:', schema_file
 
 dest_dir = 'docs'
+if ver != 'latest':
+    dest_dir += '/'+ver
 print 'Destination for docs is:', dest_dir
 
-breakdown_file = 'src/V1/documentation.MARDS'
+breakdown_file = 'src/'+ver+'/documentation.MARDS'
 print 'Breakdown MARDS for doc is:', breakdown_file
 
 

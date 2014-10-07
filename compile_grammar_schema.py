@@ -1,11 +1,12 @@
 import sys, os, glob
 
 import MARDS
+from current_version import CV
 
-schema_file = 'src/V1/index.MARDS-schema'
+schema_file = 'src/'+CV+'/index.MARDS-schema'
 print 'Schema file is:', schema_file
 
-compile_dir = 'compiled/V1'
+compile_dir = 'compiled/'+CV
 print 'Destination for compiled MARDS-schema is:', compile_dir
 
 print
