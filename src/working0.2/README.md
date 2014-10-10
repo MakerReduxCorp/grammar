@@ -1,4 +1,4 @@
 grammar
 =======
 
-Maker Redux industry grammar files
+Maker Redux grammar files
