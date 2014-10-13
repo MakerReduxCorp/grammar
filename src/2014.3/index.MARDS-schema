@@ -334,7 +334,7 @@ name part
             required
             default 1
     name estimates
-        define en
+        describe en
             title "Estimates"
             abstract "The estimates block is optional.  Including it will cause the values given to be used when generating as production estimate. Values given in the estimates are non-binding."
             body "::"

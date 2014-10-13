@@ -48,6 +48,12 @@ qty *integer*
     
     
 estimates
+    title: Estimates
+    
+    abstract: The estimates block is optional.  Including it will cause the values given to be used when generating as production estimate. Values given in the estimates are non-binding.
+    
+    body: ::
+    
     The following items can be below this attribute:
     
         prototype_price *price*
