@@ -10,14 +10,13 @@ for line in text.split("\n"):
        continue
     print 'processing:', line + '\n'
     t, ver = line.split(" ", 1)
-
     if t != "#":
 
         schema_file = 'src/'+ver+'/index.MARDS-schema'
         print 'Schema file is:', schema_file
 
         dest_dir = 'docs'
-        if ver != 'latest':
+        if t != 'latest':
             dest_dir += '/'+ver
         print 'Destination for docs is:', dest_dir
 
