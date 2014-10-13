@@ -1,5 +1,5 @@
 # comment each comment line must start with '# comment'
 # comment
-working working0.2
-latest 0.1
-archive 0.0
+working 2014.4-PRE
+latest 2014.3
+archive 2014.2
