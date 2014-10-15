@@ -1,0 +1,19 @@
+## this is a MARDS doc that tells the documentation_generator how
+## to break down the index.MARDS-schema schema into RST files.
+
+root index
+    title "Maker Redux Recipe Grammar Documentation"
+    add_body_file intro.rst
+
+    sub workstep
+        title "Worksteps"
+        new_doc true
+    sub maker    
+        title "Makers"
+        new_doc true
+    sub part
+        title "Parts"
+        new_doc true
+    sub parameter
+        title "Parameters"
+        new_doc true
