@@ -113,7 +113,6 @@ template drill
         required
         treatment unique
         value
-            required
         name xpos
             required
             value
