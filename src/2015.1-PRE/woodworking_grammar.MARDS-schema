@@ -83,10 +83,12 @@ template glue_assembly
             type duration
 
 template sand_part
-    name abrasive
+    name stop_level
+        required
         value
             required
             type string
+       
 
 template surface_finish
     describe en 
