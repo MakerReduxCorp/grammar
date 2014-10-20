@@ -25,6 +25,10 @@ template woodworking_workstep_grammar
             extend drill
         match 'edge_route'
             extend edge_route
+        match 'dado'
+            extend dado
+        match 'groove'
+            extend groove
         match_else
             raise_error 'function does not exist'
 
@@ -107,42 +111,99 @@ template drill
         title "drill holes in a surface"
     name hole
         required
-        treatment list
+        treatment unique
         value
             required
-                name xpos
+        name xpos
+            required
+            value
                 required
-                    value
-                        required
-                        type length
-                name ypos
+                type length
+        name ypos
+            required
+            value
                 required
-                    value
-                        required
-                        type length
-                name diameter
+                type length
+        name diameter
+            required
+            value
                 required
-                    value
-                        required
-                        type diameter
-                name surface
+                type length
+
+        name method
+            required
+            value
                 required
-                    value
-                        required
-                        type string
+                type radio_select 
+                    choice through
+                    choice blind
+                        name clearance_depth
+                            required
+                            value
+                                required
+                                type length
+                default through
+
+        name surface
+            required
+            value
+                required
+                type string
 template edge_route
     describe en
         title "edge form with router or router table"
     name bit
-    required
+        required
+        treatment one
         value
             required
             type string
     name edge
-    required
+        required
+        treatment unique
         value
             required
             type string
+
+template dado
+    extend dado_groove
+    describe en
+        title "cut a dado"
+
+template groove
+    extend dado_groove
+    describe en
+        title "cut a groove"
+
+template dado_groove
+    name width
+        required
+        value
+            required
+            type length
+    name depth
+        required
+        value
+            required
+            type length
+
+    name method
+        required
+        value
+            required
+            type radio_select 
+                choice through
+                choice from_edge
+                    name length
+                        required
+                        value
+                            required
+                            type length
+            default through
+
+                
+
+
 
 
 name species_choice
