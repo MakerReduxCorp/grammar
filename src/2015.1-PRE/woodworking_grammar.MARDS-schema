@@ -111,7 +111,6 @@ template drill
         title "drill holes in a surface"
     name hole
         required
-        treatment unique
         value
         name xpos
             required
