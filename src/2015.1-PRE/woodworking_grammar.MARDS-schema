@@ -265,7 +265,6 @@ template wood_panel
     name width
         value
             type length
-
     name length
         value
             type length

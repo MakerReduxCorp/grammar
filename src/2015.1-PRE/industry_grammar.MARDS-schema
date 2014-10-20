@@ -54,6 +54,8 @@ template parts_grammar
             extend from_distributor
         match 'open'
             extend open
+        match 'plastic_flat_stock'
+            extend plastic_flat_stock
         match_else
             raise_error "category not recognized"
 
@@ -79,3 +81,35 @@ template open
         title "this page intentionally left blank"
                 
 
+template plastic_flat_stock
+    describe en
+        title "sheet plastic"
+    name material
+        required
+        value
+            required
+            type radio_select
+                choice Acetal
+                choice PTFE
+                choice PVC
+                choice Polyethylene
+                choice Polypropylene
+                choice Nylon
+                choice ABS
+                choice Acrylic
+                choice PET
+    name width
+        required
+        value
+            required
+            type length
+    name length
+        required
+        value 
+            required
+            type length
+    name thickness
+        required
+        value 
+            required
+            type length
