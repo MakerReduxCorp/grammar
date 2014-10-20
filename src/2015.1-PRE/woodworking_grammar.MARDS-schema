@@ -174,30 +174,34 @@ template groove
         title "cut a groove"
 
 template dado_groove
-    name width
+    name feature
         required
         value
-            required
-            type length
-    name depth
-        required
-        value
-            required
-            type length
 
-    name method
-        required
-        value
+        name width
             required
-            type radio_select 
-                choice through
-                choice from_edge
-                    name length
-                        required
-                        value
+            value
+                required
+                type length
+        name depth
+            required
+            value
+                required
+                type length
+
+        name method
+            required
+            value
+                required
+                type radio_select 
+                    choice through
+                    choice from_edge
+                        name length
                             required
-                            type length
-            default through
+                            value
+                                required
+                                type length
+                default through
 
                 
 
