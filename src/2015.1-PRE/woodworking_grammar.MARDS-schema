@@ -10,7 +10,7 @@ template woodworking_workstep_grammar
         match 'cut_board'
             extend cut_board
         match 'cnc_part'
-            extend small_carve
+            extend cnc_part
         match 'cut_panel'
             extend cut_panel
         match 'cnc_lathe'
@@ -67,6 +67,7 @@ template cnc_lathe
     describe en
         title "cut parts on a lathe (CNC with Spindle)"
     name part_file
+        required
         value
             required
             type file
@@ -163,6 +164,7 @@ name species_choice
         choice mahongony
         choice poplar
         choice bamboo
+        choice soft_maple
 
 
 ## #######################
