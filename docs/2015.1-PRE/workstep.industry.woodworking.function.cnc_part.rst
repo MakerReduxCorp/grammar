@@ -1,5 +1,5 @@
-workstep.industry.woodworking.function.cnc_part
-===============================================
+CNC surfacing of 3D model
+=========================
 
 ''''''
 Format
@@ -7,3 +7,11 @@ Format
 
 workstep.industry.woodworking.function.cnc_part *string*
 
+''''''''''
+Attributes
+''''''''''
+
+part_file *file*
+    A *file* value is expected.
+    
+    

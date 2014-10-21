@@ -11,7 +11,7 @@ workstep.industry.woodworking.function.sand_part *string*
 Attributes
 ''''''''''
 
-abrasive *string*
+stop_level *string*
     A *string* value is expected.
     
     

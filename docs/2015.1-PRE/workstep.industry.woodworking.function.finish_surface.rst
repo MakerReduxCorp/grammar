@@ -5,7 +5,7 @@ apply surface finish and timed drying
 Format
 ''''''
 
-workstep.industry.woodworking.function.surface_finish *string*
+workstep.industry.woodworking.function.finish_surface *string*
 
 ''''''''''
 Attributes

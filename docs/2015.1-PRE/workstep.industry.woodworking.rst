@@ -20,6 +20,8 @@ There additional attributes based on **function** :
   * :doc:`workstep.industry.woodworking.function.cnc_lathe`
   * :doc:`workstep.industry.woodworking.function.glue_assembly`
   * :doc:`workstep.industry.woodworking.function.sand_part`
-  * :doc:`workstep.industry.woodworking.function.surface_finish`
+  * :doc:`workstep.industry.woodworking.function.finish_surface`
   * :doc:`workstep.industry.woodworking.function.drill`
   * :doc:`workstep.industry.woodworking.function.edge_route`
+  * :doc:`workstep.industry.woodworking.function.dado`
+  * :doc:`workstep.industry.woodworking.function.groove`

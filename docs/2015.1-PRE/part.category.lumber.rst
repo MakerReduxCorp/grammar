@@ -63,6 +63,7 @@ species *radio_select*
       * mahongony
       * poplar
       * bamboo
+      * soft_maple
     
     
 surface_finish *radio_select*
