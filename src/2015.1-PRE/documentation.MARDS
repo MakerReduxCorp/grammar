@@ -3,7 +3,7 @@
 
 root index
     title "Maker Redux Recipe Grammar Documentation"
-    add_body_file intro.rst
+    add_body_file intro.txt
 
     sub workstep
         title "Worksteps"

@@ -1,6 +1,6 @@
-#!MARDS_schema_en_1.0 maker_redux_recipe_0.2
+#!MARDS_schema_en_1.0
     describe en
-        title "Maker Redux Recipe Format v1.0"
+        title "Maker Redux Recipe Format"
     import industry_grammar
         local
 
@@ -320,6 +320,12 @@ name part
         value
             type string
             required
+        name url
+            value
+                required
+        name company_name
+            value
+                required
     name sku
         treatment one
         value
