@@ -80,3 +80,4 @@ There additional attributes based on **category** :
   * :doc:`part.category.wood_round_stock`
   * :doc:`part.category.from_distributor`
   * :doc:`part.category.open`
+  * :doc:`part.category.plastic_flat_stock`

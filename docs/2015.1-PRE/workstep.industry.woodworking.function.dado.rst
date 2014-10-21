@@ -1,30 +1,26 @@
-drill holes in a surface
-========================
+cut a dado
+==========
 
 ''''''
 Format
 ''''''
 
-workstep.industry.woodworking.function.drill *string*
+workstep.industry.woodworking.function.dado *string*
 
 ''''''''''
 Attributes
 ''''''''''
 
-hole *string*
+feature *string*
     A *string* value is expected.
     
     The following items can be below this attribute:
     
-        xpos *length*
+        width *length*
             A *length* value is expected.
             
             
-        ypos *length*
-            A *length* value is expected.
-            
-            
-        diameter *length*
+        depth *length*
             A *length* value is expected.
             
             
@@ -33,18 +29,14 @@ hole *string*
             choices:
             
               * through
-              * blind
+              * from_edge
                 The following are part of this choice:
                 
-                clearance_depth *length*
+                length *length*
                     A *length* value is expected.
                     
                     
                 
-            
-            
-        surface *string*
-            A *string* value is expected.
             
             
     

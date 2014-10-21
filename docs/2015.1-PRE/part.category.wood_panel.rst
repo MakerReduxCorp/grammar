@@ -34,6 +34,7 @@ top_surface *radio_select*
       * mahongony
       * poplar
       * bamboo
+      * soft_maple
     
     
 bottom_surface *radio_select*
@@ -59,6 +60,7 @@ bottom_surface *radio_select*
       * mahongony
       * poplar
       * bamboo
+      * soft_maple
     
     
 top_quality *radio_select*

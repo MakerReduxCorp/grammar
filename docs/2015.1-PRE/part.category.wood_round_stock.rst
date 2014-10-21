@@ -44,5 +44,6 @@ species *radio_select*
       * mahongony
       * poplar
       * bamboo
+      * soft_maple
     
     

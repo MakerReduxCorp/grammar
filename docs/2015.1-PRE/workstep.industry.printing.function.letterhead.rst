@@ -12,20 +12,38 @@ Attributes
 ''''''''''
 
 paper_size *radio_select*
-    The choice selected adds additional attributes. Click below to see them.
     
     choices:
     
       * 8.5x11
       * 7.5x10
-      * :doc:`workstep.industry.printing.function.letterhead.paper_size.custom`
+      * custom
+        The following are part of this choice:
+        
+        length *length*
+            A *length* value is expected.
+            
+            
+        width *length*
+            A *length* value is expected.
+            
+            
+        
     
     
-color_method *radio_select*
+method *radio_select*
     
     choices:
     
-      * offset_spot
+      * digital
+      * offset
+    
+    
+ink_colors *radio_select*
+    
+    choices:
+    
+      * PMS_spot
         The following are part of this choice:
         
         pantone *radio_select*
@@ -979,7 +997,7 @@ color_method *radio_select*
             
             
         
-      * CMYK process
+      * process
         The following are part of this choice:
         
         cyan_pdf_file *file*
@@ -999,6 +1017,16 @@ color_method *radio_select*
             
             
         
+    
+    
+paper_color *radio_select*
+    
+    choices:
+    
+      * white
+      * natural
+      * cream
+      * ivory
     
     
 paper_basis_weight *radio_select*
@@ -1021,47 +1049,50 @@ paper_texture *radio_select*
     
       * smooth
       * wove
-      * granite
-      * parchment
       * linen
       * laid
+      * cotton
+      * vellum
+      * fiber
     
     
 bleed *boolean*
     A *boolean* value is expected.
     
     
-sides *radio_select*
-    
-    choices:
-    
-      * 1
-      * 2
-    
-    
 slip_sheet_count *qty*
     A *qty* value is expected.
     
     
-paper_packaging *radio_select*
-    The choice selected adds additional attributes. Click below to see them.
+packaging *radio_select*
     
     choices:
     
       * ream_wrapped
+        The following are part of this choice:
+        
+        sheets_per *radio_select*
+            
+            choices:
+            
+              * 500
+            
+            
+        
       * shrink_wrapped
-      * :doc:`workstep.industry.printing.function.letterhead.paper_packaging.boxed`
+      * boxed
+        The following are part of this choice:
+        
+        sheets_per *radio_select*
+            
+            choices:
+            
+              * 500
+              * 1000
+              * 2500
+              * 5000
+            
+            
+        
     
     
-''''''''''
-Variations
-''''''''''
-
-
-There additional attributes based on **paper_size** :
-
-  * :doc:`workstep.industry.printing.function.letterhead.paper_size.custom`
-
-There additional attributes based on **paper_packaging** :
-
-  * :doc:`workstep.industry.printing.function.letterhead.paper_packaging.boxed`
