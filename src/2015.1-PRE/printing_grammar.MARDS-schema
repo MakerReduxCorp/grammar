@@ -11,11 +11,10 @@ template printing_workstep_grammar
     search function
         match 'letterhead'
             extend letterhead
-        ## match 'envelopes'
-        ## match 'business_cards'
-        ## match 'brochures'
-        ## match 'booklets'
-        ## match 'flyers'
+        match 'envelopes'
+        match 'business_cards'
+        match 'brochures'
+        match 'flyers'
         match 'small_bw_laser_print'
             extend small_bw_laser_print
         match_else
