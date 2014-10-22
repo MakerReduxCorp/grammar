@@ -5,6 +5,8 @@ print custom letterhead on paper
 
     <pre><b>workstep.industry.printing.function.letterhead</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -12,6 +14,8 @@ Attributes
 .. raw:: html
 
     <pre><b>paper_size</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -27,10 +31,14 @@ Attributes
         
             <pre><b>length</b> <i>length</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>width</b> <i>length</i></pre>
+        
+        ..
         
             
         
@@ -39,6 +47,8 @@ Attributes
 .. raw:: html
 
     <pre><b>method</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -52,6 +62,8 @@ Attributes
 
     <pre><b>ink_colors</b> <i>radio_select</i></pre>
 
+..
+
     choices:
     
       * ``PMS_spot``
@@ -61,6 +73,8 @@ Attributes
         .. raw:: html
         
             <pre><b>pantone</b> <i>radio_select</i></pre>
+        
+        ..
         
             choices:
             
@@ -1945,6 +1959,8 @@ Attributes
                 
                     <pre><b>pdf_file</b> <i>file</i></pre>
                 
+                ..
+                
                     
             
             
@@ -1957,20 +1973,28 @@ Attributes
         
             <pre><b>cyan_pdf_file</b> <i>file</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>magenta_pdf_file</b> <i>file</i></pre>
+        
+        ..
         
             
         .. raw:: html
         
             <pre><b>yellow_pdf_file</b> <i>file</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>key_pdf_file</b> <i>file</i></pre>
+        
+        ..
         
             
         
@@ -1979,6 +2003,8 @@ Attributes
 .. raw:: html
 
     <pre><b>paper_color</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -1995,6 +2021,8 @@ Attributes
 .. raw:: html
 
     <pre><b>paper_basis_weight</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -2020,6 +2048,8 @@ Attributes
 
     <pre><b>paper_texture</b> <i>radio_select</i></pre>
 
+..
+
     choices:
     
       * ``smooth``
@@ -2042,15 +2072,21 @@ Attributes
 
     <pre><b>bleed</b> <i>boolean</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>slip_sheet_count</b> <i>qty</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>packaging</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -2061,6 +2097,8 @@ Attributes
         .. raw:: html
         
             <pre><b>sheets_per</b> <i>radio_select</i></pre>
+        
+        ..
         
             choices:
             
@@ -2078,6 +2116,8 @@ Attributes
         .. raw:: html
         
             <pre><b>sheets_per</b> <i>radio_select</i></pre>
+        
+        ..
         
             choices:
             

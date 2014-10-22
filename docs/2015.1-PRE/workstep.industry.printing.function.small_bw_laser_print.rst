@@ -5,6 +5,8 @@ print black/white on a small consumer-grade SOHO laser printer
 
     <pre><b>workstep.industry.printing.function.small_bw_laser_print</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -13,15 +15,21 @@ Attributes
 
     <pre><b>pdf_file</b> <i>file</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>pdf_page_count</b> <i>qty</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>paper</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     

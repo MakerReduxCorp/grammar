@@ -6,6 +6,8 @@
 ##
 ## #######################
 template woodworking_workstep_grammar
+    describe en 
+        title "Woodworking"
     search function
         match 'cut_board'
             extend cut_board

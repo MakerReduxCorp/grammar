@@ -5,6 +5,8 @@ Part ordered from a vendor with no additional processing required
 
     <pre><b>part.category.from_distributor</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -13,14 +15,20 @@ Attributes
 
     <pre><b>part_number</b> <i>string</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>distributor</b> <i>string</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>part_url</b> <i>string</i></pre>
+
+..
 
     

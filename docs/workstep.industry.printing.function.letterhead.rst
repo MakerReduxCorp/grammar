@@ -5,6 +5,8 @@ print custom letterhead on paper
 
     <pre><b>workstep.industry.printing.function.letterhead</b> <i>string</i></pre>
 
+..
+
 .. sidebar:: Variations
    
    There are additional attributes based on **paper_size** :
@@ -24,6 +26,8 @@ Attributes
 
     <pre><b>paper_size</b> <i>radio_select</i></pre>
 
+..
+
     The choice selected adds additional attributes. Click above to see them.
     choices:
     
@@ -39,6 +43,8 @@ Attributes
 
     <pre><b>color_method</b> <i>radio_select</i></pre>
 
+..
+
     choices:
     
       * ``offset_spot``
@@ -48,6 +54,8 @@ Attributes
         .. raw:: html
         
             <pre><b>pantone</b> <i>radio_select</i></pre>
+        
+        ..
         
             choices:
             
@@ -1932,6 +1940,8 @@ Attributes
                 
                     <pre><b>pdf_file</b> <i>file</i></pre>
                 
+                ..
+                
                     
             
             
@@ -1944,20 +1954,28 @@ Attributes
         
             <pre><b>cyan_pdf_file</b> <i>file</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>magenta_pdf_file</b> <i>file</i></pre>
+        
+        ..
         
             
         .. raw:: html
         
             <pre><b>yellow_pdf_file</b> <i>file</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>key_pdf_file</b> <i>file</i></pre>
+        
+        ..
         
             
         
@@ -1966,6 +1984,8 @@ Attributes
 .. raw:: html
 
     <pre><b>paper_basis_weight</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -1991,6 +2011,8 @@ Attributes
 
     <pre><b>paper_texture</b> <i>radio_select</i></pre>
 
+..
+
     choices:
     
       * ``smooth``
@@ -2011,10 +2033,14 @@ Attributes
 
     <pre><b>bleed</b> <i>boolean</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>sides</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -2028,10 +2054,14 @@ Attributes
 
     <pre><b>slip_sheet_count</b> <i>qty</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>paper_packaging</b> <i>radio_select</i></pre>
+
+..
 
     The choice selected adds additional attributes. Click above to see them.
     choices:

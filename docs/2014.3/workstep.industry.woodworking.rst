@@ -5,6 +5,8 @@ workstep.industry.woodworking
 
     <pre><b>workstep.industry.woodworking</b> <i>string</i></pre>
 
+..
+
 .. sidebar:: Variations
    
    There are additional attributes based on **function** :

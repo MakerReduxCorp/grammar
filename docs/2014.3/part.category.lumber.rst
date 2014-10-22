@@ -5,6 +5,8 @@ part.category.lumber
 
     <pre><b>part.category.lumber</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -12,6 +14,8 @@ Attributes
 .. raw:: html
 
     <pre><b>thickness</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -39,20 +43,28 @@ Attributes
 
     <pre><b>minimum_width</b> <i>length</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>minimum_length</b> <i>length</i></pre>
+
+..
 
     
 .. raw:: html
 
     <pre><b>board_feet</b> <i>length</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>species</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -99,6 +111,8 @@ Attributes
 .. raw:: html
 
     <pre><b>surface_finish</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     

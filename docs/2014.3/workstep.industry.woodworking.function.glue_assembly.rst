@@ -5,6 +5,8 @@ assemble parts with adhesive and timed curing
 
     <pre><b>workstep.industry.woodworking.function.glue_assembly</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -13,9 +15,13 @@ Attributes
 
     <pre><b>adhesive</b> <i>string</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>dry_time</b> <i>duration</i></pre>
+
+..
 
     

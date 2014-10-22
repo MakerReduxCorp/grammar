@@ -5,6 +5,8 @@ edge form with router or router table
 
     <pre><b>workstep.industry.woodworking.function.edge_route</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -13,9 +15,13 @@ Attributes
 
     <pre><b>bit</b> <i>string</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>edge</b> <i>string</i></pre>
+
+..
 
     

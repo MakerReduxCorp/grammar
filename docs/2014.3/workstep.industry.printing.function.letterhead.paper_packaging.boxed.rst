@@ -5,6 +5,8 @@ workstep.industry.printing.function.letterhead.paper_packaging.boxed
 
     <pre><b>workstep.industry.printing.function.letterhead.paper_packaging.boxed</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -12,6 +14,8 @@ Attributes
 .. raw:: html
 
     <pre><b>sheets_per_box</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     

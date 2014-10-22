@@ -5,6 +5,8 @@ workstep.industry.laser_cutting
 
     <pre><b>workstep.industry.laser_cutting</b> <i>string</i></pre>
 
+..
+
 .. sidebar:: Variations
    
    There are additional attributes based on **function** :

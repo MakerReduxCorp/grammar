@@ -5,6 +5,8 @@ part.category.wood_round_stock
 
     <pre><b>part.category.wood_round_stock</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -13,15 +15,21 @@ Attributes
 
     <pre><b>diameter</b> <i>length</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>minimum_length</b> <i>length</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>species</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     

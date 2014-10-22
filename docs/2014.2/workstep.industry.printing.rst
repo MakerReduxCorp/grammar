@@ -5,6 +5,8 @@ workstep.industry.printing
 
     <pre><b>workstep.industry.printing</b> <i>string</i></pre>
 
+..
+
 .. sidebar:: Variations
    
    There are additional attributes based on **function** :

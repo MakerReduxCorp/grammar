@@ -1,4 +1,4 @@
-import sys, os, glob
+import sys, os, glob, shutil
 
 import MARDS
 fh = open("version.txt", 'r')
@@ -12,7 +12,8 @@ for line in text.split("\n"):
     t, ver = line.split(" ", 1)
     if t != "#":
 
-        schema_file = 'src/'+ver+'/index.MARDS-schema'
+        schema_dir = 'src/'+ver
+        schema_file = schema_dir+'/index.MARDS-schema'
         print 'Schema file is:', schema_file
 
         dest_dir = 'docs'
@@ -61,4 +62,7 @@ for line in text.split("\n"):
         print "    done."
         print
 
+        print "  Copying other RST files..."
+        for filename in glob.glob(os.path.join(schema_dir, '*.rst')):
+            shutil.copy(filename, dest_dir)
         print "done."

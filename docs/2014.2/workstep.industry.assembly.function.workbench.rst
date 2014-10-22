@@ -5,3 +5,5 @@ assemble parts into higher level assembly
 
     <pre><b>workstep.industry.assembly.function.workbench</b> <i>string</i></pre>
 
+..
+

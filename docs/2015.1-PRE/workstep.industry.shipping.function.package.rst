@@ -5,6 +5,8 @@ pack materials for shipping
 
     <pre><b>workstep.industry.shipping.function.package</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -12,6 +14,8 @@ Attributes
 .. raw:: html
 
     <pre><b>fill</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     

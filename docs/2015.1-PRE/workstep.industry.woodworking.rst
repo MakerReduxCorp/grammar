@@ -1,9 +1,11 @@
-workstep.industry.woodworking
-=============================
+Woodworking
+===========
 
 .. raw:: html
 
     <pre><b>workstep.industry.woodworking</b> <i>string</i></pre>
+
+..
 
 .. sidebar:: Variations
    

@@ -5,6 +5,8 @@ Flat stock lumber (Plywood, MDF, particle board, etc)
 
     <pre><b>part.category.wood_panel</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -12,6 +14,8 @@ Attributes
 .. raw:: html
 
     <pre><b>top_surface</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -59,6 +63,8 @@ Attributes
 
     <pre><b>bottom_surface</b> <i>radio_select</i></pre>
 
+..
+
     choices:
     
       * ``oak``
@@ -105,6 +111,8 @@ Attributes
 
     <pre><b>top_quality</b> <i>radio_select</i></pre>
 
+..
+
     choices:
     
       * ``fine``
@@ -118,6 +126,8 @@ Attributes
 .. raw:: html
 
     <pre><b>bottom_quality</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     
@@ -133,20 +143,28 @@ Attributes
 
     <pre><b>width</b> <i>length</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>length</b> <i>length</i></pre>
+
+..
 
     
 .. raw:: html
 
     <pre><b>thickness</b> <i>length</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>core</b> <i>radio_select</i></pre>
+
+..
 
     choices:
     

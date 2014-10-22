@@ -5,6 +5,8 @@ cut a dado
 
     <pre><b>workstep.industry.woodworking.function.dado</b> <i>string</i></pre>
 
+..
+
 ''''''''''
 Attributes
 ''''''''''
@@ -13,21 +15,29 @@ Attributes
 
     <pre><b>feature</b> <i>string</i></pre>
 
+..
+
     The following can further define this attribute:
     
         .. raw:: html
         
             <pre><b>width</b> <i>length</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>depth</b> <i>length</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>method</b> <i>radio_select</i></pre>
+        
+        ..
         
             choices:
             
@@ -40,6 +50,8 @@ Attributes
                 .. raw:: html
                 
                     <pre><b>length</b> <i>length</i></pre>
+                
+                ..
                 
                     
                 

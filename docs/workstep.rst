@@ -5,6 +5,8 @@ Workstep
 
     <pre><b>workstep</b> <i>label</i></pre>
 
+..
+
 *A single step in the process of building the final product.*
 
 A workstep is a description of what must be *done* to completely build a part. Worksteps generally list 'input' parts first, have a 'maker' then 'do stuff', and then 'output' parts.
@@ -28,6 +30,8 @@ Attributes
 
     <pre><b>version</b> <i>string</i></pre>
 
+..
+
     *The version of Maker Redux's recipe system that this was defined with.*
     
     A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with.
@@ -36,6 +40,8 @@ Attributes
 .. raw:: html
 
     <pre><b>description</b> <i>string</i></pre>
+
+..
 
     *A general description of this workstep.*
     
@@ -46,6 +52,8 @@ Attributes
 
     <pre><b>maker</b> <i>label</i></pre>
 
+..
+
     *The label of the maker role assigned to perform this workstep.*
     
     The label of the maker role assigned to perform this workstep.
@@ -54,6 +62,8 @@ Attributes
 .. raw:: html
 
     <pre><b>input</b> <i>label</i></pre>
+
+..
 
     *A part (or workstep output) to be consumed by this workstep.*
     
@@ -64,6 +74,8 @@ Attributes
         .. raw:: html
         
             <pre><b>qty</b> <i>integer</i></pre>
+        
+        ..
         
             *The number of parts needed.*
             
@@ -76,6 +88,8 @@ Attributes
 
     <pre><b>output</b> <i>label</i></pre>
 
+..
+
     *A part created by this workstep.*
     
     The workstep will produce one or more parts.  If the parts are not explicitly declared, the system will automatically create parts with a name matching the workstep name.
@@ -86,10 +100,14 @@ Attributes
         
             <pre><b>final</b> <i>boolean</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>qty</b> <i>integer</i></pre>
+        
+        ..
         
             *The number of parts produced by the workstep*
             
@@ -102,25 +120,35 @@ Attributes
 
     <pre><b>instructions</b> <i>string</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>pre_event_timer</b> <i>duration</i></pre>
+
+..
 
     
 .. raw:: html
 
     <pre><b>post_event_timer</b> <i>duration</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>repeat</b> <i>qty</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>estimates</b></pre>
+
+..
 
     The following can further define this attribute:
     
@@ -128,30 +156,42 @@ Attributes
         
             <pre><b>prototype_price</b> <i>price</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>prototype_time</b> <i>duration</i></pre>
+        
+        ..
         
             
         .. raw:: html
         
             <pre><b>pilot_price</b> <i>price</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>pilot_time</b> <i>duration</i></pre>
+        
+        ..
         
             
         .. raw:: html
         
             <pre><b>production_price</b> <i>price</i></pre>
         
+        ..
+        
             
         .. raw:: html
         
             <pre><b>production_time</b> <i>duration</i></pre>
+        
+        ..
         
             
     
@@ -160,9 +200,13 @@ Attributes
 
     <pre><b>industry</b> <i>string</i></pre>
 
+..
+
     
 .. raw:: html
 
     <pre><b>function</b> <i>string</i></pre>
+
+..
 
     
