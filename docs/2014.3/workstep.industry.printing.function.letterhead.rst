@@ -1,12 +1,6 @@
 print custom letterhead on paper
 ================================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.printing.function.letterhead</b> <i>string</i></pre>
-
-..
-
 .. sidebar:: Variations
    
    There are additional attributes based on **paper_size** :

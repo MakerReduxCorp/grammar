@@ -1,12 +1,6 @@
 Letterhead
 ==========
 
-.. raw:: html
-
-    <pre><b>workstep.industry.printing.function.letterhead</b> <i>string</i></pre>
-
-..
-
 *Printing custom letterhead on paper.*
 
 ''''''''''

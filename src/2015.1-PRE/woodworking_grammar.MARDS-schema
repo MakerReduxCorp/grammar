@@ -8,6 +8,8 @@
 template woodworking_workstep_grammar
     describe en 
         title "Woodworking"
+        abstract "Worksteps from the woodworking industry."
+        body "When the `industry` is set to `workworking`, the workstep should then be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'cut_board'
             extend cut_board

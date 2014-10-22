@@ -1,12 +1,6 @@
 pack materials for shipping
 ===========================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.shipping.function.package</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

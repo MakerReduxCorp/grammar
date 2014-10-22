@@ -1,11 +1,9 @@
 Woodworking
 ===========
 
-.. raw:: html
+*Worksteps from the woodworking industry.*
 
-    <pre><b>workstep.industry.woodworking</b> <i>string</i></pre>
-
-..
+When the `industry` is set to `workworking`, the workstep should then be assigned a `function`. See the sidebar to the left for a list of valid `function` values.
 
 .. sidebar:: Variations
    

@@ -1,12 +1,6 @@
 part.category.lumber
 ====================
 
-.. raw:: html
-
-    <pre><b>part.category.lumber</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

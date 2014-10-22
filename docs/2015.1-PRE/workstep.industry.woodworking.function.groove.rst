@@ -1,12 +1,6 @@
 cut a groove
 ============
 
-.. raw:: html
-
-    <pre><b>workstep.industry.woodworking.function.groove</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

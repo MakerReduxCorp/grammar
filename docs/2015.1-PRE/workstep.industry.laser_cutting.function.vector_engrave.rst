@@ -1,12 +1,6 @@
 laser engrave part(s)
 =====================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.laser_cutting.function.vector_engrave</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

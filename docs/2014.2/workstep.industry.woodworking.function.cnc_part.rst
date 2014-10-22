@@ -1,12 +1,6 @@
 CNC surfacing of 3D model
 =========================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.woodworking.function.cnc_part</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

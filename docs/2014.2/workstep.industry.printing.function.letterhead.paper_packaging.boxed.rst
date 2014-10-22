@@ -1,12 +1,6 @@
 workstep.industry.printing.function.letterhead.paper_packaging.boxed
 ====================================================================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.printing.function.letterhead.paper_packaging.boxed</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

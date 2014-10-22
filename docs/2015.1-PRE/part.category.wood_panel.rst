@@ -1,12 +1,6 @@
 Flat stock lumber (Plywood, MDF, particle board, etc)
 =====================================================
 
-.. raw:: html
-
-    <pre><b>part.category.wood_panel</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

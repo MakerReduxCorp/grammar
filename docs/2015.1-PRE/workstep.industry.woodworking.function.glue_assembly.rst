@@ -1,12 +1,6 @@
 assemble parts with adhesive and timed curing
 =============================================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.woodworking.function.glue_assembly</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

@@ -5,15 +5,15 @@ root index
     title "Maker Redux Recipe Grammar Documentation"
     add_body_file intro.rst
 
-    sub workstep
-        title "Worksteps"
-        new_doc true
-    sub maker    
-        title "Makers"
-        new_doc true
     sub part
         title "Parts"
         new_doc true
+    sub workstep
+        title "Worksteps"
+        new_doc true
     sub parameter
         title "Parameters"
+        new_doc true
+    sub maker    
+        title "Makers"
         new_doc true

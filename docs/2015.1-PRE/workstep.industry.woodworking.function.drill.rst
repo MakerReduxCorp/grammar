@@ -1,12 +1,6 @@
 drill holes in a surface
 ========================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.woodworking.function.drill</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

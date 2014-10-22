@@ -1,12 +1,6 @@
 cut a board to specified dimensions
 ===================================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.woodworking.function.cut_board</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

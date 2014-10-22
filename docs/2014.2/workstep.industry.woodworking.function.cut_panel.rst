@@ -1,12 +1,6 @@
 cut parts from panel flatstock
 ==============================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.woodworking.function.cut_panel</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

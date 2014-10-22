@@ -1,12 +1,6 @@
 Printing
 ========
 
-.. raw:: html
-
-    <pre><b>workstep.industry.printing</b> <i>string</i></pre>
-
-..
-
 *Worksteps associated with the printing industry.*
 
 .. sidebar:: Variations

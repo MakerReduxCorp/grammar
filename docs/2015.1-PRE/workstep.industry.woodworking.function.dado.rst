@@ -1,12 +1,6 @@
 cut a dado
 ==========
 
-.. raw:: html
-
-    <pre><b>workstep.industry.woodworking.function.dado</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

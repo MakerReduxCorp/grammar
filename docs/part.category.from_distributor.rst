@@ -1,12 +1,6 @@
 Part ordered from a vendor with no additional processing required
 =================================================================
 
-.. raw:: html
-
-    <pre><b>part.category.from_distributor</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

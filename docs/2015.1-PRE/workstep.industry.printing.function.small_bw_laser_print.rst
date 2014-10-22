@@ -1,12 +1,6 @@
 print black/white on a small consumer-grade SOHO laser printer
 ==============================================================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.printing.function.small_bw_laser_print</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

@@ -1,12 +1,6 @@
 Sheet plastic
 =============
 
-.. raw:: html
-
-    <pre><b>part.category.plastic_flat_stock</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

@@ -1,12 +1,6 @@
 apply surface finish and timed drying
 =====================================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.woodworking.function.finish_surface</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

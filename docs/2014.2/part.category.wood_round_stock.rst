@@ -1,12 +1,6 @@
 part.category.wood_round_stock
 ==============================
 
-.. raw:: html
-
-    <pre><b>part.category.wood_round_stock</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

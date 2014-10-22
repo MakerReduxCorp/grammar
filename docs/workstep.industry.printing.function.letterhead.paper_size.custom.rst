@@ -1,12 +1,6 @@
 workstep.industry.printing.function.letterhead.paper_size.custom
 ================================================================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.printing.function.letterhead.paper_size.custom</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''

@@ -1,12 +1,6 @@
 Raster engrave part(s)
 ======================
 
-.. raw:: html
-
-    <pre><b>workstep.industry.laser_cutting.function.raster_engrave</b> <i>string</i></pre>
-
-..
-
 ''''''''''
 Attributes
 ''''''''''
