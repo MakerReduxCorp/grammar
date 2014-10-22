@@ -8,6 +8,9 @@
 ##
 ## #######################
 template printing_workstep_grammar
+    describe en 
+        title "Printing"
+        abstract "Worksteps associated with the printing industry."
     search function
         match 'letterhead'
             extend letterhead
@@ -22,8 +25,12 @@ template printing_workstep_grammar
 
 template letterhead
     describe en
-        title "print custom letterhead on paper"
+        title "Letterhead"
+        abstract "Printing custom letterhead on paper."
     name paper_size
+        describe en
+            abstract "Size of the paper for the letterhead."
+            body "The 8.5" x 11" and 7.5" x 10" sizes are common. For any other size, choose 'custom' and specify the length and width of the FINAL product."
         required
         treatment one
         value

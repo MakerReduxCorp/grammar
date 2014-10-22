@@ -19,46 +19,33 @@ Attributes
 
     choices:
     
-      * ``oak``
-    
-      * ``pine``
-    
-      * ``walnut``
-    
-      * ``bubinga``
-    
-      * ``cypress``
-    
-      * ``fir``
-    
-      * ``hemlock``
-    
-      * ``maple``
-    
-      * ``cedar``
-    
-      * ``spruce``
-    
-      * ``ash``
-    
-      * ``padauk``
-    
-      * ``birch``
-    
-      * ``chestnut``
-    
-      * ``cherry``
-    
-      * ``ebony``
-    
-      * ``mahongony``
-    
-      * ``poplar``
-    
-      * ``bamboo``
-    
-      * ``soft_maple``
-    
+.. raw:: html
+
+    <select>
+        <option>oak</option>
+        <option>pine</option>
+        <option>walnut</option>
+        <option>bubinga</option>
+        <option>cypress</option>
+        <option>fir</option>
+        <option>hemlock</option>
+        <option>maple</option>
+        <option>cedar</option>
+        <option>spruce</option>
+        <option>ash</option>
+        <option>padauk</option>
+        <option>birch</option>
+        <option>chestnut</option>
+        <option>cherry</option>
+        <option>ebony</option>
+        <option>mahongony</option>
+        <option>poplar</option>
+        <option>bamboo</option>
+        <option>soft_maple</option>
+    </select>
+
+..
+
     
     
 .. raw:: html
@@ -69,46 +56,33 @@ Attributes
 
     choices:
     
-      * ``oak``
-    
-      * ``pine``
-    
-      * ``walnut``
-    
-      * ``bubinga``
-    
-      * ``cypress``
-    
-      * ``fir``
-    
-      * ``hemlock``
-    
-      * ``maple``
-    
-      * ``cedar``
-    
-      * ``spruce``
-    
-      * ``ash``
-    
-      * ``padauk``
-    
-      * ``birch``
-    
-      * ``chestnut``
-    
-      * ``cherry``
-    
-      * ``ebony``
-    
-      * ``mahongony``
-    
-      * ``poplar``
-    
-      * ``bamboo``
-    
-      * ``soft_maple``
-    
+.. raw:: html
+
+    <select>
+        <option>oak</option>
+        <option>pine</option>
+        <option>walnut</option>
+        <option>bubinga</option>
+        <option>cypress</option>
+        <option>fir</option>
+        <option>hemlock</option>
+        <option>maple</option>
+        <option>cedar</option>
+        <option>spruce</option>
+        <option>ash</option>
+        <option>padauk</option>
+        <option>birch</option>
+        <option>chestnut</option>
+        <option>cherry</option>
+        <option>ebony</option>
+        <option>mahongony</option>
+        <option>poplar</option>
+        <option>bamboo</option>
+        <option>soft_maple</option>
+    </select>
+
+..
+
     
     
 .. raw:: html
