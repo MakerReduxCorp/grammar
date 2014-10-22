@@ -1,101 +1,158 @@
 Flat stock lumber (Plywood, MDF, particle board, etc)
 =====================================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-part.category.wood_panel *string*
+    <pre><b>part.category.wood_panel</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-top_surface *radio_select*
-    
+.. raw:: html
+
+    <pre><b>top_surface</b> <i>radio_select</i></pre>
+
     choices:
     
-      * oak
-      * pine
-      * walnut
-      * bubinga
-      * cypress
-      * fir
-      * hemlock
-      * maple
-      * cedar
-      * spruce
-      * ash
-      * padauk
-      * birch
-      * chestnut
-      * cherry
-      * ebony
-      * mahongony
-      * poplar
-      * bamboo
+      * ``oak``
+    
+      * ``pine``
+    
+      * ``walnut``
+    
+      * ``bubinga``
+    
+      * ``cypress``
+    
+      * ``fir``
+    
+      * ``hemlock``
+    
+      * ``maple``
+    
+      * ``cedar``
+    
+      * ``spruce``
+    
+      * ``ash``
+    
+      * ``padauk``
+    
+      * ``birch``
+    
+      * ``chestnut``
+    
+      * ``cherry``
+    
+      * ``ebony``
+    
+      * ``mahongony``
+    
+      * ``poplar``
+    
+      * ``bamboo``
     
     
-bottom_surface *radio_select*
     
+.. raw:: html
+
+    <pre><b>bottom_surface</b> <i>radio_select</i></pre>
+
     choices:
     
-      * oak
-      * pine
-      * walnut
-      * bubinga
-      * cypress
-      * fir
-      * hemlock
-      * maple
-      * cedar
-      * spruce
-      * ash
-      * padauk
-      * birch
-      * chestnut
-      * cherry
-      * ebony
-      * mahongony
-      * poplar
-      * bamboo
+      * ``oak``
+    
+      * ``pine``
+    
+      * ``walnut``
+    
+      * ``bubinga``
+    
+      * ``cypress``
+    
+      * ``fir``
+    
+      * ``hemlock``
+    
+      * ``maple``
+    
+      * ``cedar``
+    
+      * ``spruce``
+    
+      * ``ash``
+    
+      * ``padauk``
+    
+      * ``birch``
+    
+      * ``chestnut``
+    
+      * ``cherry``
+    
+      * ``ebony``
+    
+      * ``mahongony``
+    
+      * ``poplar``
+    
+      * ``bamboo``
     
     
-top_quality *radio_select*
     
+.. raw:: html
+
+    <pre><b>top_quality</b> <i>radio_select</i></pre>
+
     choices:
     
-      * fine
-      * medium
-      * course
+      * ``fine``
+    
+      * ``medium``
+    
+      * ``course``
     
     
-bottom_quality *radio_select*
     
+.. raw:: html
+
+    <pre><b>bottom_quality</b> <i>radio_select</i></pre>
+
     choices:
     
-      * fine
-      * medium
-      * course
+      * ``fine``
+    
+      * ``medium``
+    
+      * ``course``
     
     
-width *length*
-    A *length* value is expected.
     
+.. raw:: html
+
+    <pre><b>width</b> <i>length</i></pre>
+
     
-length *length*
-    A *length* value is expected.
+.. raw:: html
+
+    <pre><b>length</b> <i>length</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>thickness</b> <i>length</i></pre>
+
     
-thickness *length*
-    A *length* value is expected.
-    
-    
-core *radio_select*
-    
+.. raw:: html
+
+    <pre><b>core</b> <i>radio_select</i></pre>
+
     choices:
     
-      * MDF
-      * layer
+      * ``MDF``
+    
+      * ``layer``
+    
     
     

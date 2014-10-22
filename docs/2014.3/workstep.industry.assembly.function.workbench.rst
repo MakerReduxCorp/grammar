@@ -1,9 +1,7 @@
 assemble parts into higher level assembly
 =========================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.assembly.function.workbench *string*
+    <pre><b>workstep.industry.assembly.function.workbench</b> <i>string</i></pre>
 

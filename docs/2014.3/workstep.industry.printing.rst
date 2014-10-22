@@ -1,18 +1,15 @@
 workstep.industry.printing
 ==========================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.printing *string*
+    <pre><b>workstep.industry.printing</b> <i>string</i></pre>
 
-''''''''''
-Variations
-''''''''''
+.. sidebar:: Variations
+   
+   There are additional attributes based on **function** :
+   
+     * ``letterhead`` - :doc:`workstep.industry.printing.function.letterhead`
+     * ``small_bw_laser_print`` - :doc:`workstep.industry.printing.function.small_bw_laser_print`
+   
 
-
-There additional attributes based on **function** :
-
-  * :doc:`workstep.industry.printing.function.letterhead`
-  * :doc:`workstep.industry.printing.function.small_bw_laser_print`

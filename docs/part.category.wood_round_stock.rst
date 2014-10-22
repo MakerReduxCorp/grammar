@@ -1,48 +1,67 @@
 part.category.wood_round_stock
 ==============================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-part.category.wood_round_stock *string*
+    <pre><b>part.category.wood_round_stock</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-diameter *length*
-    A *length* value is expected.
+.. raw:: html
+
+    <pre><b>diameter</b> <i>length</i></pre>
+
     
-    title: nominal diameter of stock
+.. raw:: html
+
+    <pre><b>minimum_length</b> <i>length</i></pre>
+
     
-    
-minimum_length *length*
-    A *length* value is expected.
-    
-    
-species *radio_select*
-    
+.. raw:: html
+
+    <pre><b>species</b> <i>radio_select</i></pre>
+
     choices:
     
-      * oak
-      * pine
-      * walnut
-      * bubinga
-      * cypress
-      * fir
-      * hemlock
-      * maple
-      * cedar
-      * spruce
-      * ash
-      * padauk
-      * birch
-      * chestnut
-      * cherry
-      * ebony
-      * mahongony
-      * poplar
-      * bamboo
+      * ``oak``
+    
+      * ``pine``
+    
+      * ``walnut``
+    
+      * ``bubinga``
+    
+      * ``cypress``
+    
+      * ``fir``
+    
+      * ``hemlock``
+    
+      * ``maple``
+    
+      * ``cedar``
+    
+      * ``spruce``
+    
+      * ``ash``
+    
+      * ``padauk``
+    
+      * ``birch``
+    
+      * ``chestnut``
+    
+      * ``cherry``
+    
+      * ``ebony``
+    
+      * ``mahongony``
+    
+      * ``poplar``
+    
+      * ``bamboo``
+    
     
     

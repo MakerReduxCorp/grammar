@@ -1,17 +1,16 @@
 cut parts on a lathe (CNC with Spindle)
 =======================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.cnc_lathe *string*
+    <pre><b>workstep.industry.woodworking.function.cnc_lathe</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-part_file *file*
-    A *file* value is expected.
-    
+.. raw:: html
+
+    <pre><b>part_file</b> <i>file</i></pre>
+
     

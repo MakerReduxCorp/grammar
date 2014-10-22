@@ -1,23 +1,21 @@
 cut a board to specified dimensions
 ===================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.cut_board *string*
+    <pre><b>workstep.industry.woodworking.function.cut_board</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-length *length*
-    A *length* value is expected.
+.. raw:: html
+
+    <pre><b>length</b> <i>length</i></pre>
+
     
-    title: length of the board in axis of primary grain
-    
-    
-width *length*
-    A *length* value is expected.
-    
+.. raw:: html
+
+    <pre><b>width</b> <i>length</i></pre>
+
     

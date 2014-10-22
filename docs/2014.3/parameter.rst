@@ -1,21 +1,11 @@
 Parameter
 =========
 
-''''''
-Format
-''''''
+.. raw:: html
 
-parameter *label*
+    <pre><b>parameter</b> <i>label</i></pre>
 
-''''''''
-Abstract
-''''''''
-
-A variable piece of information used to customize the manufacturing process or product.
-
-''''
-Body
-''''
+*A variable piece of information used to customize the manufacturing process or product.*
 
 Parameters are used to describe variable parts of the product.  The value of the parameter will be established when the product is ordered.  For example, a string to be engraved on a product or a specific color choice.
 
@@ -23,37 +13,42 @@ Parameters are used to describe variable parts of the product.  The value of the
 Attributes
 ''''''''''
 
-version *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>version</b> <i>string</i></pre>
+
+    *The version of Maker Redux's recipe system that this was defined with.*
     
-    title: System Version
-    
-    abstract: The version of Maker Redux's recipe system that this was defined with.
-    
-    body: A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with.
-    
-    
-description *string*
-    A *string* value is expected.
+    A recipe can be made up of elements made up at different times in Maker Redux's history. This line simply indicates which version this element should be interpreted with.
     
     
-type *label*
-    A *label* value is expected.
+.. raw:: html
+
+    <pre><b>description</b> <i>string</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>type</b> <i>label</i></pre>
+
     
-title *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>title</b> <i>string</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>default_value</b> <i>string</i></pre>
+
     
-default_value *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>default_unit</b> <i>string</i></pre>
+
     
-    
-default_unit *string*
-    A *string* value is expected.
-    
-    
-choices *string*
-    A *string* value is expected.
-    
+.. raw:: html
+
+    <pre><b>choices</b> <i>string</i></pre>
+
     

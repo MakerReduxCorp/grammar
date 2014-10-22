@@ -1,17 +1,16 @@
 workstep.industry.woodworking.function.sand_part
 ================================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.sand_part *string*
+    <pre><b>workstep.industry.woodworking.function.sand_part</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-stop_level *string*
-    A *string* value is expected.
-    
+.. raw:: html
+
+    <pre><b>stop_level</b> <i>string</i></pre>
+
     

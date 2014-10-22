@@ -1,33 +1,36 @@
 Raster engrave part(s)
 ======================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.laser_cutting.function.raster_engrave *string*
+    <pre><b>workstep.industry.laser_cutting.function.raster_engrave</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-part_file *file*
-    A *file* value is expected.
+.. raw:: html
+
+    <pre><b>part_file</b> <i>file</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>reference_file</b> <i>file</i></pre>
+
     
-reference_file *file*
-    A *file* value is expected.
+.. raw:: html
+
+    <pre><b>xpos</b> <i>integer</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>ypos</b> <i>integer</i></pre>
+
     
-xpos *integer*
-    A *integer* value is expected.
-    
-    
-ypos *integer*
-    A *integer* value is expected.
-    
-    
-image *file*
-    A *file* value is expected.
-    
+.. raw:: html
+
+    <pre><b>image</b> <i>file</i></pre>
+
     

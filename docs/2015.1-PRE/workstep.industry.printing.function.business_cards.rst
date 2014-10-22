@@ -1,9 +1,7 @@
 workstep.industry.printing.function.business_cards
 ==================================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.printing.function.business_cards *string*
+    <pre><b>workstep.industry.printing.function.business_cards</b> <i>string</i></pre>
 

@@ -1,40 +1,52 @@
-sheet plastic
+Sheet plastic
 =============
 
-''''''
-Format
-''''''
+.. raw:: html
 
-part.category.plastic_flat_stock *string*
+    <pre><b>part.category.plastic_flat_stock</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-material *radio_select*
-    
+.. raw:: html
+
+    <pre><b>material</b> <i>radio_select</i></pre>
+
     choices:
     
-      * Acetal
-      * PTFE
-      * PVC
-      * Polyethylene
-      * Polypropylene
-      * Nylon
-      * ABS
-      * Acrylic
-      * PET
+      * ``acetal``
+    
+      * ``PTFE``
+    
+      * ``PVC``
+    
+      * ``polyethylene``
+    
+      * ``polypropylene``
+    
+      * ``nylon``
+    
+      * ``ABS``
+    
+      * ``acrylic``
+    
+      * ``PET``
     
     
-width *length*
-    A *length* value is expected.
     
+.. raw:: html
+
+    <pre><b>width</b> <i>length</i></pre>
+
     
-length *length*
-    A *length* value is expected.
+.. raw:: html
+
+    <pre><b>length</b> <i>length</i></pre>
+
     
-    
-thickness *length*
-    A *length* value is expected.
-    
+.. raw:: html
+
+    <pre><b>thickness</b> <i>length</i></pre>
+
     

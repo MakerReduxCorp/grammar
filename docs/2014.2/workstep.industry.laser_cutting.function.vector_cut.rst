@@ -1,21 +1,21 @@
 laser cut part(s) from flatstock
 ================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.laser_cutting.function.vector_cut *string*
+    <pre><b>workstep.industry.laser_cutting.function.vector_cut</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-part_file *file*
-    A *file* value is expected.
+.. raw:: html
+
+    <pre><b>part_file</b> <i>file</i></pre>
+
     
-    
-reference_file *file*
-    A *file* value is expected.
-    
+.. raw:: html
+
+    <pre><b>reference_file</b> <i>file</i></pre>
+
     

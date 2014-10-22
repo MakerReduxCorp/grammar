@@ -1,40 +1,46 @@
 cut a dado
 ==========
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.dado *string*
+    <pre><b>workstep.industry.woodworking.function.dado</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-feature *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>feature</b> <i>string</i></pre>
+
+    The following can further define this attribute:
     
-    The following items can be below this attribute:
-    
-        width *length*
-            A *length* value is expected.
+        .. raw:: html
+        
+            <pre><b>width</b> <i>length</i></pre>
+        
             
+        .. raw:: html
+        
+            <pre><b>depth</b> <i>length</i></pre>
+        
             
-        depth *length*
-            A *length* value is expected.
-            
-            
-        method *radio_select*
-            
+        .. raw:: html
+        
+            <pre><b>method</b> <i>radio_select</i></pre>
+        
             choices:
             
-              * through
-              * from_edge
-                The following are part of this choice:
+              * ``through``
+            
+              * ``from_edge``
+            
+                The following can further define this choice:
                 
-                length *length*
-                    A *length* value is expected.
-                    
+                .. raw:: html
+                
+                    <pre><b>length</b> <i>length</i></pre>
+                
                     
                 
             

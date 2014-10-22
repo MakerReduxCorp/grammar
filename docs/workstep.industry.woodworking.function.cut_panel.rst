@@ -1,21 +1,21 @@
 cut parts from panel flatstock
 ==============================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.cut_panel *string*
+    <pre><b>workstep.industry.woodworking.function.cut_panel</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-length *length*
-    A *length* value is expected.
+.. raw:: html
+
+    <pre><b>length</b> <i>length</i></pre>
+
     
-    
-width *length*
-    A *length* value is expected.
-    
+.. raw:: html
+
+    <pre><b>width</b> <i>length</i></pre>
+
     

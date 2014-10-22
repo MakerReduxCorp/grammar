@@ -1,37 +1,41 @@
 laser engrave part(s)
 =====================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.laser_cutting.function.vector_engrave *string*
+    <pre><b>workstep.industry.laser_cutting.function.vector_engrave</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-part_file *file*
-    A *file* value is expected.
+.. raw:: html
+
+    <pre><b>part_file</b> <i>file</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>reference_file</b> <i>file</i></pre>
+
     
-reference_file *file*
-    A *file* value is expected.
+.. raw:: html
+
+    <pre><b>xpos</b> <i>integer</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>ypos</b> <i>integer</i></pre>
+
     
-xpos *integer*
-    A *integer* value is expected.
+.. raw:: html
+
+    <pre><b>font_file</b> <i>file</i></pre>
+
     
-    
-ypos *integer*
-    A *integer* value is expected.
-    
-    
-font_file *file*
-    A *file* value is expected.
-    
-    
-engravestring *string*
-    A *string* value is expected.
-    
+.. raw:: html
+
+    <pre><b>engravestring</b> <i>string</i></pre>
+
     

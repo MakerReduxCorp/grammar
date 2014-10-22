@@ -1,51 +1,59 @@
 drill holes in a surface
 ========================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.drill *string*
+    <pre><b>workstep.industry.woodworking.function.drill</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-hole *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>hole</b> <i>string</i></pre>
+
+    The following can further define this attribute:
     
-    The following items can be below this attribute:
-    
-        xpos *length*
-            A *length* value is expected.
+        .. raw:: html
+        
+            <pre><b>xpos</b> <i>length</i></pre>
+        
             
+        .. raw:: html
+        
+            <pre><b>ypos</b> <i>length</i></pre>
+        
             
-        ypos *length*
-            A *length* value is expected.
+        .. raw:: html
+        
+            <pre><b>diameter</b> <i>length</i></pre>
+        
             
-            
-        diameter *length*
-            A *length* value is expected.
-            
-            
-        method *radio_select*
-            
+        .. raw:: html
+        
+            <pre><b>method</b> <i>radio_select</i></pre>
+        
             choices:
             
-              * through
-              * blind
-                The following are part of this choice:
+              * ``through``
+            
+              * ``blind``
+            
+                The following can further define this choice:
                 
-                clearance_depth *length*
-                    A *length* value is expected.
-                    
+                .. raw:: html
+                
+                    <pre><b>clearance_depth</b> <i>length</i></pre>
+                
                     
                 
             
             
-        surface *string*
-            A *string* value is expected.
-            
+        .. raw:: html
+        
+            <pre><b>surface</b> <i>string</i></pre>
+        
             
     
     

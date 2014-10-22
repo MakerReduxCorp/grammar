@@ -1,23 +1,27 @@
 workstep.industry.printing.function.letterhead.paper_packaging.boxed
 ====================================================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.printing.function.letterhead.paper_packaging.boxed *string*
+    <pre><b>workstep.industry.printing.function.letterhead.paper_packaging.boxed</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-sheets_per_box *radio_select*
-    
+.. raw:: html
+
+    <pre><b>sheets_per_box</b> <i>radio_select</i></pre>
+
     choices:
     
-      * 500
-      * 1000
-      * 2500
-      * 5000
+      * ``500``
+    
+      * ``1000``
+    
+      * ``2500``
+    
+      * ``5000``
+    
     
     

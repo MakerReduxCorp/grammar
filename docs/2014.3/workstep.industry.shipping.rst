@@ -1,17 +1,14 @@
 workstep.industry.shipping
 ==========================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.shipping *string*
+    <pre><b>workstep.industry.shipping</b> <i>string</i></pre>
 
-''''''''''
-Variations
-''''''''''
+.. sidebar:: Variations
+   
+   There are additional attributes based on **function** :
+   
+     * ``package`` - :doc:`workstep.industry.shipping.function.package`
+   
 
-
-There additional attributes based on **function** :
-
-  * :doc:`workstep.industry.shipping.function.package`

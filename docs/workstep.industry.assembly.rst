@@ -1,17 +1,14 @@
 workstep.industry.assembly
 ==========================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.assembly *string*
+    <pre><b>workstep.industry.assembly</b> <i>string</i></pre>
 
-''''''''''
-Variations
-''''''''''
+.. sidebar:: Variations
+   
+   There are additional attributes based on **function** :
+   
+     * ``workbench`` - :doc:`workstep.industry.assembly.function.workbench`
+   
 
-
-There additional attributes based on **function** :
-
-  * :doc:`workstep.industry.assembly.function.workbench`

@@ -1,33 +1,41 @@
 print black/white on a consumer-grade SOHO laser printer
 ========================================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.printing.function.small_bw_laser_print *string*
+    <pre><b>workstep.industry.printing.function.small_bw_laser_print</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-pdf_file *file*
-    A *file* value is expected.
+.. raw:: html
+
+    <pre><b>pdf_file</b> <i>file</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>pdf_page_count</b> <i>qty</i></pre>
+
     
-pdf_page_count *qty*
-    A *qty* value is expected.
-    
-    
-paper *radio_select*
-    
+.. raw:: html
+
+    <pre><b>paper</b> <i>radio_select</i></pre>
+
     choices:
     
-      * 24lb_letter
-      * 32lb_letter
-      * 24lb_96_brightness_letter
-      * 65lb_white_coverstock_letter
-      * Avery_5165_full-sheet_label
-      * 24lb_legal
+      * ``24lb_letter``
+    
+      * ``32lb_letter``
+    
+      * ``24lb_96_brightness_letter``
+    
+      * ``65lb_white_coverstock_letter``
+    
+      * ``Avery_5165_full-sheet_label``
+    
+      * ``24lb_legal``
+    
     
     

@@ -1,23 +1,23 @@
 pack materials for shipping
 ===========================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.shipping.function.package *string*
+    <pre><b>workstep.industry.shipping.function.package</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-fill *radio_select*
-    
+.. raw:: html
+
+    <pre><b>fill</b> <i>radio_select</i></pre>
+
     choices:
     
-      * starch_peanuts
-      * preform_styro
+      * ``starch_peanuts``
     
-    title: material to fill around shipped parts
+      * ``preform_styro``
+    
     
     

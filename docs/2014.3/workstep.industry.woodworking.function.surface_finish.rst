@@ -1,21 +1,21 @@
 apply surface finish and timed drying
 =====================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.surface_finish *string*
+    <pre><b>workstep.industry.woodworking.function.surface_finish</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-finishing_agent *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>finishing_agent</b> <i>string</i></pre>
+
     
-    
-dry_time *duration*
-    A *duration* value is expected.
-    
+.. raw:: html
+
+    <pre><b>dry_time</b> <i>duration</i></pre>
+
     

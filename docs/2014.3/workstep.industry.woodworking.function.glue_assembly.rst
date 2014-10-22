@@ -1,21 +1,21 @@
 assemble parts with adhesive and timed curing
 =============================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.glue_assembly *string*
+    <pre><b>workstep.industry.woodworking.function.glue_assembly</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-adhesive *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>adhesive</b> <i>string</i></pre>
+
     
-    
-dry_time *duration*
-    A *duration* value is expected.
-    
+.. raw:: html
+
+    <pre><b>dry_time</b> <i>duration</i></pre>
+
     

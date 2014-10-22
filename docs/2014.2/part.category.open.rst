@@ -1,9 +1,7 @@
 this page intentionally left blank
 ==================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-part.category.open *string*
+    <pre><b>part.category.open</b> <i>string</i></pre>
 

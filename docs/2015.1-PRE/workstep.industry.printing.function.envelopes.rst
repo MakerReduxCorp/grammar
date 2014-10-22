@@ -1,9 +1,7 @@
 workstep.industry.printing.function.envelopes
 =============================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.printing.function.envelopes *string*
+    <pre><b>workstep.industry.printing.function.envelopes</b> <i>string</i></pre>
 

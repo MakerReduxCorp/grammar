@@ -1,21 +1,21 @@
 workstep.industry.printing.function.letterhead.paper_size.custom
 ================================================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.printing.function.letterhead.paper_size.custom *string*
+    <pre><b>workstep.industry.printing.function.letterhead.paper_size.custom</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-horizontal_paper_length *length*
-    A *length* value is expected.
+.. raw:: html
+
+    <pre><b>horizontal_paper_length</b> <i>length</i></pre>
+
     
-    
-vertical_paper_length *length*
-    A *length* value is expected.
-    
+.. raw:: html
+
+    <pre><b>vertical_paper_length</b> <i>length</i></pre>
+
     

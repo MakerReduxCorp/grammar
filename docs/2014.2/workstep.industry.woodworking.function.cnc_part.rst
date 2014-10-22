@@ -1,17 +1,16 @@
 CNC surfacing of 3D model
 =========================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.cnc_part *string*
+    <pre><b>workstep.industry.woodworking.function.cnc_part</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-part_file *file*
-    A *file* value is expected.
-    
+.. raw:: html
+
+    <pre><b>part_file</b> <i>file</i></pre>
+
     

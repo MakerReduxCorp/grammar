@@ -1,25 +1,26 @@
 Part ordered from a vendor with no additional processing required
 =================================================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-part.category.from_distributor *string*
+    <pre><b>part.category.from_distributor</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-part_number *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>part_number</b> <i>string</i></pre>
+
     
+.. raw:: html
+
+    <pre><b>distributor</b> <i>string</i></pre>
+
     
-distributor *string*
-    A *string* value is expected.
-    
-    
-part_url *string*
-    A *string* value is expected.
-    
+.. raw:: html
+
+    <pre><b>part_url</b> <i>string</i></pre>
+
     

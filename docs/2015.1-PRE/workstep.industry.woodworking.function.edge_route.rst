@@ -1,21 +1,21 @@
 edge form with router or router table
 =====================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.woodworking.function.edge_route *string*
+    <pre><b>workstep.industry.woodworking.function.edge_route</b> <i>string</i></pre>
 
 ''''''''''
 Attributes
 ''''''''''
 
-bit *string*
-    A *string* value is expected.
+.. raw:: html
+
+    <pre><b>bit</b> <i>string</i></pre>
+
     
-    
-edge *string*
-    A *string* value is expected.
-    
+.. raw:: html
+
+    <pre><b>edge</b> <i>string</i></pre>
+
     

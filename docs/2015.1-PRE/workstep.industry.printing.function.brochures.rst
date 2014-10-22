@@ -1,9 +1,7 @@
 workstep.industry.printing.function.brochures
 =============================================
 
-''''''
-Format
-''''''
+.. raw:: html
 
-workstep.industry.printing.function.brochures *string*
+    <pre><b>workstep.industry.printing.function.brochures</b> <i>string</i></pre>
 
