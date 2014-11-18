@@ -46,6 +46,8 @@ Attributes
 
 ..
 
+    *The maker role that will supply this part.*
+    
     
 .. raw:: html
 
@@ -91,6 +93,8 @@ Attributes
 
 ..
 
+    *Unofficial budgetary pricing.*
+    
     The following can further define this attribute:
     
         .. raw:: html

@@ -39,6 +39,8 @@ Attributes
 
 ..
 
+    *The type of informationa to be entered during the order. See docs for details.*
+    
     
 .. raw:: html
 

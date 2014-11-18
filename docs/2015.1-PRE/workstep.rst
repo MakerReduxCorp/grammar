@@ -54,7 +54,7 @@ Attributes
 
 ..
 
-    *The label of the maker role assigned to perform this workstep.*
+    *The maker role assigned to perform this workstep.*
     
     The label of the maker role assigned to perform this workstep.
     
@@ -150,6 +150,8 @@ Attributes
 
 ..
 
+    *Unofficial budgetary pricing.*
+    
     The following can further define this attribute:
     
         .. raw:: html
