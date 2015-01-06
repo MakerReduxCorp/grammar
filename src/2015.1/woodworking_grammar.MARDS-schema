@@ -6,29 +6,35 @@
 ##
 ## #######################
 template woodworking_workstep_grammar
+    describe en 
+        title "Woodworking"
+        abstract "Worksteps from the woodworking industry."
+        body "When the `industry` is set to `workworking`, the workstep should then be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'cut_board'
             extend cut_board
-        match 'cnc_part'
-            extend small_carve
+        match 'cnc_25D_tiny'
+            extend cnc_25D_tiny
+	match 'cnc_25D_medium'
+	    extend cnc_25D_medium
         match 'cut_panel'
             extend cut_panel
-        match 'cnc_panel'
-            extend cnc_panel
-        match 'cnc_lathe'
-            extend cnc_lathe
         match 'glue_assembly'
             extend glue_assembly
         match 'sand_part'
             extend sand_part
-        match 'surface_finish'
-            extend woodworking.surface_finish
+        match 'finish_surface'
+            extend finish_surface
+        match 'drill'
+            extend drill
         match_else
             raise_error 'function does not exist'
 
 template cut_board
     describe en 
         title "cut a board to specified dimensions"
+  	abstract "PLACEHOLDER"
+	body "PLACEHOLDER"
     name length
         value
             required
@@ -40,10 +46,11 @@ template cut_board
             required
             type length
 
-template small_carve
+template cnc_part
     describe en 
         title "CNC surfacing of 3D model"   
     name part_file
+        required
         value
             required
             type file
@@ -60,18 +67,11 @@ template cut_panel
             required
             type length
 
-template cnc_panel
-    describe en 
-        title "CNC cut parts from panel flatstock"  
-    name part_file
-        value
-            required
-            type file
-            
 template cnc_lathe
     describe en
         title "cut parts on a lathe (CNC with Spindle)"
     name part_file
+        required
         value
             required
             type file
@@ -87,12 +87,14 @@ template glue_assembly
             type duration
 
 template sand_part
-    name abrasive
+    name stop_level
+        required
         value
             required
             type string
+       
 
-template woodworking.surface_finish
+template finish_surface
     describe en 
         title "apply surface finish and timed drying"     
     name finishing_agent
@@ -103,6 +105,108 @@ template woodworking.surface_finish
         value
             required
             type duration
+
+template drill
+    describe en
+        title "drill holes in a surface"
+    name hole
+        required
+        value
+        name xpos
+            required
+            value
+                required
+                type length
+        name ypos
+            required
+            value
+                required
+                type length
+        name diameter
+            required
+            value
+                required
+                type length
+
+        name method
+            required
+            value
+                required
+                type radio_select 
+                    choice through
+                    choice blind
+                        name clearance_depth
+                            required
+                            value
+                                required
+                                type length
+                default through
+
+        name surface
+            required
+            value
+                required
+                type string
+template edge_route
+    describe en
+        title "edge form with router or router table"
+    name bit
+        required
+        treatment one
+        value
+            required
+            type string
+    name edge
+        required
+        treatment unique
+        value
+            required
+            type string
+
+template dado
+    extend dado_groove
+    describe en
+        title "cut a dado"
+
+template groove
+    extend dado_groove
+    describe en
+        title "cut a groove"
+
+template dado_groove
+    name feature
+        required
+        value
+
+        name width
+            required
+            value
+                required
+                type length
+        name depth
+            required
+            value
+                required
+                type length
+
+        name method
+            required
+            value
+                required
+                type radio_select 
+                    choice through
+                    choice from_edge
+                        name length
+                            required
+                            value
+                                required
+                                type length
+                default through
+
+                
+
+
+
 
 name species_choice
     type radio_select
@@ -125,6 +229,7 @@ name species_choice
         choice mahongony
         choice poplar
         choice bamboo
+        choice soft_maple
 
 
 ## #######################
@@ -225,7 +330,6 @@ template wood_panel
     name width
         value
             type length
-
     name length
         value
             type length
