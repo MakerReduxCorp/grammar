@@ -1,0 +1,97 @@
+#!MARDS_schema_en_1.0 woodworking_grammar_0.2
+    import woodworking_grammar
+        local
+    import laser_cutting_grammar
+        local
+    import shipping_grammar
+        local
+    import assembly_grammar
+        local
+    import printing_grammar
+        local
+
+
+    describe en
+        title "Grammer for Worksteps"
+
+template workstep_grammar
+    search industry
+        match 'woodworking' 
+            extend woodworking_workstep_grammar
+                from woodworking_grammar
+        match 'laser_cutting'
+            extend laser_cutting_workstep_grammar
+                from laser_cutting_grammar
+        match 'printing'
+            extend printing_workstep_grammar
+                from printing_grammar
+        match 'assembly'    
+            extend assembly_workstep_grammar
+                from assembly_grammar
+        match 'shipping'
+            extend shipping_workstep_grammar
+                from shipping_grammar
+        match_else
+            raise_error "workstep industry not recognized"
+
+template parts_grammar
+    name category
+        required
+        value
+            type label
+            required
+            default open
+    search category
+        match 'lumber'
+            extend lumber
+                from woodworking_grammar
+        match 'wood_panel' 
+            extend wood_panel
+                from woodworking_grammar
+        match 'wood_round_stock' 
+            extend wood_round_stock
+                from woodworking_grammar
+        match 'open'
+            extend open
+        match 'plastic_flat_stock'
+            extend plastic_flat_stock
+        match_else
+            raise_error "category not recognized"
+
+template open
+    describe en 
+        title "this page intentionally left blank"
+                
+
+template plastic_flat_stock
+    describe en
+        title "Sheet plastic"
+    name material
+        required
+        value
+            required
+            type radio_select
+                choice acetal
+                choice PTFE
+                choice PVC
+                choice polyethylene
+                choice polypropylene
+                choice nylon
+                choice ABS
+                choice acrylic
+                choice PET
+    name width
+        required
+        value
+            required
+            type length
+    name length
+        required
+        value 
+            required
+            type length
+    name thickness
+        required
+        value 
+            required
+            type length

@@ -1,5 +1,5 @@
-print black/white on a consumer-grade SOHO laser printer
-========================================================
+print black/white on a small consumer-grade SOHO laser printer
+==============================================================
 
 ''''''''''
 Attributes
