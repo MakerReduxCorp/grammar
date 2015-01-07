@@ -49,6 +49,7 @@ Attributes
         <option>mahongony</option>
         <option>poplar</option>
         <option>bamboo</option>
+        <option>soft_maple</option>
     </select>
 
 ..

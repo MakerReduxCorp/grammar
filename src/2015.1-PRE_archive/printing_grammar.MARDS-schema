@@ -1,4 +1,6 @@
 #!MARDS_schema_en_1.0 printing_grammar_0.2
+    import printing_pantone_grammar
+        local
 
 ## #######################
 ##
@@ -65,18 +67,8 @@ template letterhead
             required
             type radio_select
                 choice 'PMS_spot'
-                    name pantone
-                        treatment unique
-                        required
-                        value
-                            required
-                            type string
-                    name pdf_file
-                        treatment unique
-                        required
-                        value
-                            required
-                            type file
+                    extend pantone_spot_color
+                        from printing_pantone_grammar
                 choice 'process'
                     name cyan_pdf_file
                         treatment unique
@@ -242,19 +234,8 @@ template business_cards
             required
             type radio_select
                 choice 'PMS_spot'
-                    name pantone
-                        treatment unique
-                        required
-                        value
-                            required
-                            type string
-                    name pdf_file
-                        treatment unique
-                        required
-                        value
-                            required
-                            type file
-
+                    extend pantone_spot_color
+                        from printing_pantone_grammar
                 choice 'process'
                     name cyan_pdf_file
                         treatment unique
@@ -402,19 +383,8 @@ template envelopes
             required
             type radio_select
                 choice 'PMS_spot'
-                    name pantone
-                        treatment unique
-                        required
-                        value
-                            required
-                            type string
-                    name pdf_file
-                        treatment unique
-                        required
-                        value
-                            required
-                            type file
-
+                    extend pantone_spot_color
+                        from printing_pantone_grammar
                 choice 'process'
                     name cyan_pdf_file
                         treatment unique
@@ -540,19 +510,8 @@ template flyers
             required
             type radio_select
                 choice 'PMS_spot'
-                    name pantone
-                        treatment unique
-                        required
-                        value
-                            required
-                            type string
-                    name pdf_file
-                        treatment unique
-                        required
-                        value
-                            required
-                            type file
-
+                    extend pantone_spot_color
+                        from printing_pantone_grammar
                 choice 'process'
                     name cyan_pdf_file
                         treatment unique
@@ -677,20 +636,8 @@ template brochures
             required
             type radio_select
                 choice 'PMS_spot'
-                    name pantone
-                        treatment unique
-                        required
-                        value
-                            required
-                            type string
-                    name pdf_file
-                        treatment unique
-                        required
-                        value
-                            required
-                            type file
-
-
+                    extend pantone_spot_color
+                        from printing_pantone_grammar
                 choice 'process'
                     name cyan_pdf_file
                         treatment unique
