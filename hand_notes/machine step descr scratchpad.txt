@@ -1,0 +1,57 @@
+small_flat_carve
+  # carve a small piece of wood in 2.5 dimensions
+
+  works with Carvey (and larger)
+  1/4" milling bits:
+    1 - 1/4" downcut straight end-mill (Onsrud 57-910)
+    2 - 1/4" upcut straight end-mill (Onsrud 52-910)
+    3 - 3/4" bottom round (core box) bit (Rockler 90946)
+    4 - 90degree v-groove (Magnate 718) Minimum 1/2" diameter
+    5 - 60degree v-groove (Rockler 91428) Minimum 1/2" diameter
+    6 - 1/8" downcut flat end-mill (Onsrud 57-240)
+    7 - 1/16" tapered ball bit (Beckwith BDP-001)
+    8 - 3/8" keyhole slot (Rockler 92024, Grizzly C1359Z)
+    9 - 3/4" hinge mortising/bottom cleaning/spoilboard cutter bit (Grizzly C1248)
+  cut area:
+    x=300mm , y=200mm , z=55mm (roughly 12" x 8" x 2.2")
+    plus 25mm per side in the x dimension for holding tabs
+  materials expected:
+    1 - soft maple lumber
+    2 - rock maple lumber
+    3 - walnut lumber
+    4 - mahogany lumber
+    5 - pine lumber
+  all materials available in sizes up to x=350 (with grain) and y=200 (across grain)
+  all lumber is available up to 8/4 thickness minus joiner loss; all lumber is expected to be flat on one side via a joiner
+  all lumber in humidity range N to N
+  all plywoods and MDF are available up to 1" thickness
+  all materials are expected to be available for production within 4 business days 
+
+
+medium_flat_carve
+  works with Shopbot Buddy, Rockler (Shark, Shark Slimline), many hand-made kits
+  1/4" milling bits:
+    1 - 1/4" downcut straight end-mill (Onsrud 57-910)
+    2 - 1/4" upcut straight end-mill (Onsrud 52-910)
+    3 - 3/4" bottom round (core box) bit (Rockler 90946)
+    4 - 90degree v-groove (Magnate 718) Minimum 1/2" diameter
+    5 - 60degree v-groove (Rockler 91428) Minimum 1/2" diameter
+    6 - 1/8" downcut flat end-mill (Onsrud 57-240)
+    7 - 1/16" tapered ball bit (Beckwith BDP-001)
+    8 - 3/8" keyhole slot (Rockler 92024, Grizzly C1359Z)
+    9 - 3/4" hinge mortising/bottom cleaning/spoilboard cutter bit (Grizzly C1248)
+  cut area:
+    610mm x 300mm x 55mm ( roughly 24" x 12" x 2.2")
+    plus 25mm per side in the x dimension for holding tabs
+  materials expected:
+    1 - soft maple lumber (up to x" wide)
+    2 - rock maple lumber (up to x" wide)
+    3 - walnut lumber (up to x" wide)
+    4 - mahogany lumber (up to x" wide)
+    5 - low-grade pine lumber (up to x" wide)
+    6 - birch lumber (up to x" wide)
+  all materials available in sizes up to x=660 (with grain)
+  all lumber is available up to 8/4 thickness minus joiner loss; all lumber is expected to be flat on one side via a joiner
+  all lumber in humidity range N to N
+  all plywoods and MDF are available up to 1" thickness
+  all materials are expected to be available for production within 4 business days 

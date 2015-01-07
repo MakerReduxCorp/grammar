@@ -18,8 +18,8 @@ Parts are used in worksteps as both inputs and as outputs.  A part such as 'boar
      * ``lumber`` - :doc:`part.category.lumber`
      * ``wood_panel`` - :doc:`part.category.wood_panel`
      * ``wood_round_stock`` - :doc:`part.category.wood_round_stock`
-     * ``from_distributor`` - :doc:`part.category.from_distributor`
      * ``open`` - :doc:`part.category.open`
+     * ``plastic_flat_stock`` - :doc:`part.category.plastic_flat_stock`
    
 
 ''''''''''
@@ -46,6 +46,8 @@ Attributes
 
 ..
 
+    *The maker role that will supply this part.*
+    
     
 .. raw:: html
 
@@ -53,6 +55,23 @@ Attributes
 
 ..
 
+    The following can further define this attribute:
+    
+        .. raw:: html
+        
+            <pre><b>url</b> <i>string</i></pre>
+        
+        ..
+        
+            
+        .. raw:: html
+        
+            <pre><b>company_name</b> <i>string</i></pre>
+        
+        ..
+        
+            
+    
     
 .. raw:: html
 
@@ -74,23 +93,7 @@ Attributes
 
 ..
 
-    *The estimates block is optional.  Including it will cause the values given to be used when generating as production estimate. Values given in the estimates are non-binding.*
-    
-    ::
-    
-        estimates
-    
-            prototype_cost $0.0
-    
-            pilot_cost $0.0
-    
-            production_cost $0.0
-    
-            prototype_time 0 minutes
-    
-            pilot_time 0 minutes
-    
-            production_time 0 minutes
+    *Unofficial budgetary pricing.*
     
     The following can further define this attribute:
     
