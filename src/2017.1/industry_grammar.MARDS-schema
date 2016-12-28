@@ -1,6 +1,34 @@
 #!MARDS_schema_en_1.0 industry_grammar_1.0
     import wood_grammar
         local
+    import adhesive_grammar
+        local
+    import bio_grammar
+        local
+    import ceramic_grammar
+        local
+    import chem_grammar
+        local
+    import composite_grammar
+        local
+    import concrete_grammar
+        local
+    import elecopt_grammar
+        local
+    import metal_grammar
+        local
+    import meta_grammar
+        local
+    import poly_grammar
+        local
+    import paper_grammar
+        local
+    import semi_grammar
+        local
+    import stone_grammar
+        local
+    import textile_grammar
+        local
     describe en
         title "Grammar for Worksteps"
 
@@ -11,7 +39,6 @@
 ## "composite": "Composites",
 ## "concrete": "Concrete",
 ## "elecopt": "Electronic/<wbr>Optical",
-## "glass": "Glass",
 ## "metal": "Metal",
 ## "meta": "Metamaterial",
 ## "poly": "Polymer/<wbr>Plastic",
@@ -22,36 +49,6 @@
 ## "wood": "Wood",    
 
 
-## import adhesive_grammar
-##     local
-## import bio_grammar
-##     local
-## import ceramic_grammar
-##     local
-## import chem_grammar
-##     local
-## import composite_grammar
-##     local
-## import concrete_grammar
-##     local
-## import elecopt_grammar
-##     local
-## import glass_grammar
-##     local
-## import metal_grammar
-##     local
-## import meta_grammar
-##     local
-## import poly_grammar
-##     local
-## import paper_grammar
-##     local
-## import semi_grammar
-##     local
-## import stone_grammar
-##     local
-## import textile_grammar
-##     local
 
 
 template workstep_grammar
@@ -62,8 +59,26 @@ template workstep_grammar
             required
             default open
     search industry
+        match 'adhesive'
+            extend workstep_grammar
+                from adhesive_grammar
+        match 'bio'
+            extend workstep_grammar
+                from bio_grammar
+        match 'ceramic'
+            extend workstep_grammar
+                from ceramic_grammar
+        match 'chem'
+            extend workstep_grammar
+                from chem_grammar
+        match 'composite'
+            extend workstep_grammar
+                from composite_grammar
+        match 'concrete'
+            extend workstep_grammar
+                from concrete_grammar
         match 'wood'
-            extend wood_workstep_grammar
+            extend workstep_grammar
                 from wood_grammar
         match_else
             raise_error "workstep industry not recognized"
@@ -76,8 +91,26 @@ template parts_grammar
             required
             default open
     search industry
+        match 'adhesive'
+            extend part_grammar
+                from adhesive_grammar
+        match 'bio'
+            extend part_grammar
+                from bio_grammar
+        match 'ceramic'
+            extend part_grammar
+                from ceramic_grammar
+        match 'chem'
+            extend part_grammar
+                from chem_grammar
+        match 'composite'
+            extend part_grammar
+                from composite_grammar
+        match 'concrete'
+            extend part_grammar
+                from concrete_grammar
         match 'wood'
-            extend wood_part_grammar
+            extend part_grammar
                 from wood_grammar
         match_else
             raise_error "category not recognized"

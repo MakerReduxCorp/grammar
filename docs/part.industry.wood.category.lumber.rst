@@ -1,6 +1,10 @@
 Lumber
 ======
 
+*Solid wood cut into rectangular pieces.*
+
+Lumber is a solid unprocessed cut of a tree. If the tree has not been cut into lumber, it is called a 'log'. If the wood has been pressed, chipped, shaped, or glued in any way, it is no longer simple lumber.
+
 ''''''''''
 Attributes
 ''''''''''

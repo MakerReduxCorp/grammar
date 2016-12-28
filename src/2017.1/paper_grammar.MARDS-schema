@@ -34,11 +34,11 @@ name species_choice
 ## Worksteps
 ##
 ## #######################
-template workstep_grammar
+template wood_workstep_grammar
     describe en 
         title "Woodworking"
         abstract "Worksteps from the woodworking industry."
-        body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
+        body "When the `industry` is set to `wood`, the workstep should then be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'other'
             extend work_other
@@ -56,16 +56,16 @@ template work_other
 ##
 ## #######################
 
-template part_grammar
+template wood_part_grammar
     describe en
         title "Wood"
         abstract "Materials from Trees (other than paper)."
-        body "The workstep should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
+        body "When the `industry` is set to `wood`, the workstep should then be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'lumber'
             extend lumber
-        match 'other'
-            extend part_other
+        match 'generic'
+            extend part_generic
         match_else
             raise_error 'function does not exist'
 
@@ -119,7 +119,7 @@ template lumber
                 choice S3S
                 choice S4S 
 
-template part_other
+template part_generic
     describe en
         title "Other"
     name species
