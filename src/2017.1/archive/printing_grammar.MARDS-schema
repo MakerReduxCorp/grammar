@@ -1,0 +1,820 @@
+#!MARDS_schema_en_1.0 printing_grammar_0.2
+
+## #######################
+##
+## Printing Industry Worksteps
+##
+## #######################
+template printing_workstep_grammar
+    describe en 
+        title "Printing"
+        abstract "Worksteps associated with the printing industry."
+    search function
+        match 'letterhead'
+            extend letterhead
+        match 'envelopes'
+        match 'business_cards'
+        match 'brochures'
+        match 'flyers'
+        match 'small_bw_laser_print'
+            extend small_bw_laser_print
+        match_else
+            raise_error "printing function not recognized"
+
+template letterhead
+    describe en
+        title "Letterhead"
+        abstract "Printing custom letterhead on paper."
+    name paper_size
+        describe en
+            abstract "Size of the paper for the letterhead."
+            body "The 8.5" x 11" and 7.5" x 10" sizes are common. For any other size, choose 'custom' and specify the length and width of the FINAL product."
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice '8.5x11'
+                choice '7.5x10'
+                choice 'custom'
+                    name length
+                        required
+                        value
+                            required
+                            type length
+                    name width
+                        required
+                        value
+                            required
+                            type length
+            default '8.5x11'
+            describe en
+                title "size of paper"
+    name method
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'digital'
+                choice 'offset'
+    name ink_colors
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'PMS_spot'
+                    name pantone
+                        treatment unique
+                        required
+                        value
+                            required
+                            type string
+                    name pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                choice 'process'
+                    name cyan_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Cyan"
+                    name magenta_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Magenta"
+                    name yellow_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Yellow"
+                    name key_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Key (black)"
+            describe en
+                title "method of printing the color"
+    name paper_color
+        treatment one
+        value
+            required
+            type radio_select
+                choice "white"
+                choice "natural"
+                choice "cream"
+                choice "ivory"
+    name paper_basis_weight
+        treatment one
+        value
+            required
+            type radio_select
+                choice '20lb_writing'
+                choice '24lb_writing'
+                choice '28lb_writing'
+                choice '32lb_writing'
+                choice '50lb_text'
+                choice '60lb_text'
+                choice '70lb_text'
+                choice '80lb_text'
+            describe en
+                title "weight of the paper to be used"
+    name paper_texture
+        treatment one
+        required
+        value
+            required
+            type radio_select
+                choice "smooth"
+                choice "wove"
+                choice "linen"
+                choice "laid"
+                choice "cotton"
+                choice "vellum"
+                choice "fiber"
+            default "smooth"
+            describe en
+                title "paper texture"
+    name bleed
+        treatment one
+        value
+            required
+            type boolean
+            describe en
+                title "A yes/no reponse to whether the inked area 'bleeds' across the cuts"
+    name slip_sheet_count
+        treatment unique
+        value
+            required
+            type qty
+            describe en
+                title "number of sheets per slip sheet (don't use to avoid slip sheets)"
+    name packaging
+        treatment unique
+        required
+        value
+            required
+            type radio_select
+                choice ream_wrapped
+                    name sheets_per
+                        required
+                        treatment unique
+                        value
+                            required
+                            type radio_select
+                                choice 500
+                            default 500
+                            describe en
+                                title "sheet count per ream"
+                choice shrink_wrapped
+                choice boxed
+                    name sheets_per
+                        required
+                        treatment unique
+                        value
+                            required
+                            type radio_select
+                                choice 500
+                                choice 1000
+                                choice 2500
+                                choice 5000
+                            default 500
+                            describe en
+                                title "sheet count per box"
+            default boxed
+            describe en
+                title "method of bundling finished paper"
+
+                        
+template business_cards
+    describe en
+        title "print business cards or calling cards"
+    name card_size
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice '3.5x2'
+                choice 'custom'
+                    name length
+                        required
+                        value
+                            required
+                            type length
+                    name width
+                        required
+                        value
+                            required
+                            type length
+            default '3.5x2'
+            describe en
+                title "size of paper"
+    name method
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'digital'
+                choice 'offset'
+    name ink_colors
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'PMS_spot'
+                    name pantone
+                        treatment unique
+                        required
+                        value
+                            required
+                            type string
+                    name pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+
+                choice 'process'
+                    name cyan_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Cyan"
+                    name magenta_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Magenta"
+                    name yellow_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Yellow"
+                    name key_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Key (black)"
+            describe en
+                title "method of printing the color"
+    name paper_color
+        treatment one
+        value
+            required
+            type radio_select
+                choice "white"
+                choice "natural"
+                choice "cream"
+                choice "ivory"
+    name paper_basis_weight
+        treatment one
+        value
+            required
+            type radio_select
+                choice '65lb_cover'
+                choice '80lb_cover'
+                choice '100lb_cover'
+            describe en
+                title "weight of the paper to be used"
+    name paper_texture
+        treatment one
+        required
+        value
+            required
+            type radio_select
+                choice "smooth"
+                choice "wove"
+                choice "linen"
+                choice "laid"
+                choice "cotton"
+                choice "vellum"
+                choice "fiber"
+                choice "gloss"
+                choice "semi-gloss"
+            default "smooth"
+            describe en
+                title "paper texture"
+    name bleed
+        treatment one
+        value
+            required
+            type boolean
+            describe en
+                title "A yes/no reponse to whether the inked area 'bleeds' across the cuts"
+
+
+template envelopes
+    describe en
+        title "print envelopes"
+    name envelope_size
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice '#10'
+                choice '#9'
+                choice '#6.75'
+                choice 'remittance'
+                choice 'catalog'
+                choice 'booklet'
+                choice 'annoucement'
+            describe en
+                title "size of envelope"
+    name window
+        treatment one
+        value
+            required
+            type boolean
+    name security_tine
+        treatment one
+        value
+            required
+            type boolean
+    name seam
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'side'
+                choice 'diagonal'
+    name insert_throat
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'hand'
+                choice 'machine'
+    name seal
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'lick-n-stick'
+                choice 'flip-n-stick laytex'
+                choice 'open flap laytex'
+    name method
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'digital'
+                choice 'offset'
+    name ink_colors
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'PMS_spot'
+                    name pantone
+                        treatment unique
+                        required
+                        value
+                            required
+                            type string
+                    name pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+
+                choice 'process'
+                    name cyan_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Cyan"
+                    name magenta_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Magenta"
+                    name yellow_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Yellow"
+                    name key_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Key (black)"
+            describe en
+                title "method of printing the color"
+    name paper_color
+        treatment one
+        value
+            required
+            type radio_select
+                choice "white"
+                choice "natural"
+                choice "cream"
+                choice "ivory"
+    name paper_basis_weight
+        treatment one
+        value
+            required
+            type radio_select
+                choice '60lb'
+                choice '70lb'
+            describe en
+                title "weight of the paper to be used"
+    name paper_texture
+        treatment one
+        required
+        value
+            required
+            type radio_select
+                choice "smooth"
+                choice "wove"
+                choice "linen"
+                choice "laid"
+                choice "cotton"
+                choice "vellum"
+                choice "fiber"
+                choice "gloss"
+                choice "semi-gloss"
+            default "smooth"
+            describe en
+                title "paper texture"
+    name bleed
+        treatment one
+        value
+            required
+            type boolean
+            describe en
+                title "A yes/no reponse to whether the inked area 'bleeds' across the cuts"
+    name flap_open
+        required
+        treatment one
+        value
+            required
+            type boolean
+
+
+template flyers
+    describe en
+        title "print flyers"
+    name paper_size
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice '8.5x11'
+                choice 'custom'
+                    name length
+                        required
+                        value
+                            required
+                            type length
+                    name width
+                        required
+                        value
+                            required
+                            type length
+            default '8.5x11'
+            describe en
+                title "size of paper"
+    name method
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'digital'
+                choice 'offset'
+    name ink_colors
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'PMS_spot'
+                    name pantone
+                        treatment unique
+                        required
+                        value
+                            required
+                            type string
+                    name pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+
+                choice 'process'
+                    name cyan_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Cyan"
+                    name magenta_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Magenta"
+                    name yellow_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Yellow"
+                    name key_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Key (black)"
+            describe en
+                title "method of printing the color"
+    name paper_color
+        treatment one
+        value
+            required
+            type radio_select
+                choice "white"
+                choice "natural"
+                choice "cream"
+                choice "ivory"
+    name paper_basis_weight
+        treatment one
+        value
+            required
+            type radio_select
+                choice '20lb_writing'
+                choice '24lb_writing'
+                choice '28lb_writing'
+                choice '32lb_writing'
+                choice '36lb_writing'
+                choice '50lb_text'
+                choice '60lb_text'
+                choice '70lb_text'
+                choice '80lb_text'
+                choice '100lb_text'
+            describe en
+                title "weight of the paper to be used"
+    name paper_texture
+        treatment one
+        required
+        value
+            required
+            type radio_select
+                choice "smooth"
+                choice "wove"
+                choice "linen"
+                choice "laid"
+                choice "cotton"
+                choice "vellum"
+                choice "fiber"
+            default "smooth"
+            describe en
+                title "paper texture"
+    name bleed
+        treatment one
+        value
+            required
+            type boolean
+            describe en
+                title "A yes/no reponse to whether the inked area 'bleeds' across the cuts"
+                
+template brochures
+    describe en
+        title "print brochures"
+    name paper_size
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice '8.5x11'
+                choice 'custom'
+                    name length
+                        required
+                        value
+                            required
+                            type length
+                    name width
+                        required
+                        value
+                            required
+                            type length
+            default '8.5x11'
+            describe en
+                title "size of paper"
+    name method
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'digital'
+                choice 'offset'
+    name ink_colors
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice 'PMS_spot'
+                    name pantone
+                        treatment unique
+                        required
+                        value
+                            required
+                            type string
+                    name pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+
+
+                choice 'process'
+                    name cyan_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Cyan"
+                    name magenta_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Magenta"
+                    name yellow_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Yellow"
+                    name key_pdf_file
+                        treatment unique
+                        required
+                        value
+                            required
+                            type file
+                            describe en
+                                title "PDF file containing image for Key (black)"
+            describe en
+                title "method of printing the color"
+    name paper_color
+        treatment one
+        value
+            required
+            type radio_select
+                choice "white"
+                choice "natural"
+                choice "cream"
+                choice "ivory"
+    name paper_basis_weight
+        treatment one
+        value
+            required
+            type radio_select
+                choice '20lb_writing'
+                choice '24lb_writing'
+                choice '28lb_writing'
+                choice '32lb_writing'
+                choice '36lb_writing'
+                choice '50lb_text'
+                choice '60lb_text'
+                choice '70lb_text'
+                choice '80lb_text'
+                choice '100lb_text'
+            describe en
+                title "weight of the paper to be used"
+    name paper_texture
+        treatment one
+        required
+        value
+            required
+            type radio_select
+                choice "smooth"
+                choice "wove"
+                choice "linen"
+                choice "laid"
+                choice "cotton"
+                choice "vellum"
+                choice "fiber"
+            default "smooth"
+            describe en
+                title "paper texture"
+    name bleed
+        treatment one
+        value
+            required
+            type boolean
+            describe en
+                title "A yes/no reponse to whether the inked area 'bleeds' across the cuts"
+    name folding
+        required
+        treatment one
+        value
+            required
+            type radio_select
+                choice "tri-fold"
+                choice "double"
+                choice "half"
+                
+
+template small_bw_laser_print
+    describe en 
+        title "print black/white on a small consumer-grade SOHO laser printer"   
+    name pdf_file
+        required
+        value
+            required
+            type file
+            describe en
+                title "PDF file containing page images in PDF/A format."
+    name pdf_page_count
+        required
+        value
+            required
+            type qty
+            describe en
+                title "The number of pages to be printed from the PDF/A file."
+    name paper
+        required
+        value
+            required
+            type radio_select
+                choice "24lb_letter"
+                choice "32lb_letter"
+                choice "24lb_96_brightness_letter"
+                choice "65lb_white_coverstock_letter"
+                choice "Avery_5165_full-sheet_label"
+                choice "24lb_legal"
+            default "24lb_letter"
+            describe en
+                title "description of paper to use"   
+                

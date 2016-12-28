@@ -15,11 +15,7 @@ A workstep is a description of what must be *done* to completely build a part. W
    
    There are additional attributes based on **industry** :
    
-     * ``woodworking`` - :doc:`workstep.industry.woodworking`
-     * ``laser_cutting`` - :doc:`workstep.industry.laser_cutting`
-     * ``printing`` - :doc:`workstep.industry.printing`
-     * ``assembly`` - :doc:`workstep.industry.assembly`
-     * ``shipping`` - :doc:`workstep.industry.shipping`
+     * ``wood`` - :doc:`workstep.industry.wood`
    
 
 ''''''''''
@@ -208,6 +204,13 @@ Attributes
 .. raw:: html
 
     <pre><b>function</b> <i>string</i></pre>
+
+..
+
+    
+.. raw:: html
+
+    <pre><b>industry</b> <i>label</i></pre>
 
 ..
 

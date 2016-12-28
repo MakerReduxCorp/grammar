@@ -1,0 +1,89 @@
+#!MARDS_schema_en_1.0 industry_grammar_1.0
+    import wood_grammar
+        local
+    describe en
+        title "Grammar for Worksteps"
+
+## "adhesive": "Adhesive",
+## "bio": "Biopolymers/<wbr>Organics",
+## "ceramic": "Ceramics",
+## "chem": "Chemicals/<wbr>Dyes/<wbr>Finish",
+## "composite": "Composites",
+## "concrete": "Concrete",
+## "elecopt": "Electronic/<wbr>Optical",
+## "glass": "Glass",
+## "metal": "Metal",
+## "meta": "Metamaterial",
+## "poly": "Polymer/<wbr>Plastic",
+## "paper": "Paper/<wbr>Pulp",
+## "semi": "Semiconductor",
+## "stone": "Stone/<wbr>Earth",
+## "textile": "Textile",
+## "wood": "Wood",    
+
+
+## import adhesive_grammar
+##     local
+## import bio_grammar
+##     local
+## import ceramic_grammar
+##     local
+## import chem_grammar
+##     local
+## import composite_grammar
+##     local
+## import concrete_grammar
+##     local
+## import elecopt_grammar
+##     local
+## import glass_grammar
+##     local
+## import metal_grammar
+##     local
+## import meta_grammar
+##     local
+## import poly_grammar
+##     local
+## import paper_grammar
+##     local
+## import semi_grammar
+##     local
+## import stone_grammar
+##     local
+## import textile_grammar
+##     local
+
+
+template workstep_grammar
+    name industry
+        required
+        value
+            type label
+            required
+            default open
+    search industry
+        match 'wood'
+            extend wood_workstep_grammar
+                from wood_grammar
+        match_else
+            raise_error "workstep industry not recognized"
+
+template parts_grammar
+    name industry
+        required
+        value
+            type label
+            required
+            default open
+    search industry
+        match 'wood'
+            extend wood_part_grammar
+                from wood_grammar
+        match_else
+            raise_error "category not recognized"
+
+template open
+    describe en 
+        title "this page intentionally left blank"
+                
+

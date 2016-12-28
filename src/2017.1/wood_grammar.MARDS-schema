@@ -1,0 +1,125 @@
+#!MARDS_schema_en_1.0 wood_grammar_0.2
+
+## ###############################
+##
+##     WOOD
+##
+## ###############################
+
+name species_choice
+    type radio_select
+        choice oak
+        choice pine
+        choice walnut
+        choice bubinga
+        choice cypress
+        choice fir
+        choice hemlock
+        choice maple
+        choice cedar
+        choice spruce
+        choice ash
+        choice padauk
+        choice birch
+        choice chestnut
+        choice cherry
+        choice ebony
+        choice mahongony
+        choice poplar
+        choice bamboo
+        choice soft_maple
+
+## #######################
+##
+## Worksteps
+##
+## #######################
+template wood_workstep_grammar
+    describe en 
+        title "Woodworking"
+        abstract "Worksteps from the woodworking industry."
+        body "When the `industry` is set to `wood`, the workstep should then be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
+    search function
+        match 'other'
+            extend work_other
+        match_else
+            raise_error 'function does not exist'
+
+template work_other
+    describe en 
+        title "Other"
+
+
+## #######################
+##
+## Parts
+##
+## #######################
+
+template wood_part_grammar
+    describe en
+        title "Wood"
+        abstract "Materials from Trees (other than paper)."
+        body "When the `industry` is set to `wood`, the workstep should then be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
+    search type
+        match 'lumber'
+            extend lumber
+        match 'generic'
+            extend part_generic
+        match_else
+            raise_error 'function does not exist'
+
+template lumber
+    describe en
+        title "Lumber"
+    name thickness
+        required
+        value
+            required
+            type radio_select
+                choice "1/4"
+                choice "1/2"
+                choice "3/4"
+                choice "4/4"
+                choice "5/4"
+                choice "6/4"
+                choice "8/4"
+                choice "10/4"
+                choice "12/4"
+        describe en
+            title "nominal thickness of raw stock"
+    name minimum_width
+        value
+            required
+            type length
+    name minimum_length
+        value
+            required
+            type length
+    name board_feet
+        value
+            required
+            type length
+    
+    name species
+        required
+        value
+            required
+            extend species_choice
+    name surface_finish
+        required
+        value
+            required
+            type radio_select
+                choice rough
+                choice S1S
+                choice S2S
+                choice S3S
+                choice S4S 
+
+template part_generic
+    describe en
+        title "Other"
+    name species
+        value
+            extend species_choice

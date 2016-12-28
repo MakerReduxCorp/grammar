@@ -1,24 +1,10 @@
-part.category.wood_round_stock
-==============================
+Other
+=====
 
 ''''''''''
 Attributes
 ''''''''''
 
-.. raw:: html
-
-    <pre><b>diameter</b> <i>length</i></pre>
-
-..
-
-    
-.. raw:: html
-
-    <pre><b>minimum_length</b> <i>length</i></pre>
-
-..
-
-    
 .. raw:: html
 
     <pre><b>species</b> <i>radio_select</i></pre>

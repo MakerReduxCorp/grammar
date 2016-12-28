@@ -1,6 +1,9 @@
-import sys, os, glob, shutil
-
+import sys
+import os
+import glob
+import shutil
 import MARDS
+
 fh = open("version.txt", 'r')
 text = fh.read()
 fh.close()

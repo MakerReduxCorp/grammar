@@ -13,13 +13,9 @@ Parts are used in worksteps as both inputs and as outputs.  A part such as 'boar
 
 .. sidebar:: Variations
    
-   There are additional attributes based on **category** :
+   There are additional attributes based on **industry** :
    
-     * ``lumber`` - :doc:`part.category.lumber`
-     * ``wood_panel`` - :doc:`part.category.wood_panel`
-     * ``wood_round_stock`` - :doc:`part.category.wood_round_stock`
-     * ``open`` - :doc:`part.category.open`
-     * ``plastic_flat_stock`` - :doc:`part.category.plastic_flat_stock`
+     * ``wood`` - :doc:`part.industry.wood`
    
 
 ''''''''''
@@ -122,7 +118,7 @@ Attributes
     
 .. raw:: html
 
-    <pre><b>category</b> <i>label</i></pre>
+    <pre><b>industry</b> <i>label</i></pre>
 
 ..
 
