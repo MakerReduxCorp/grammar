@@ -43,7 +43,7 @@ template part_grammar
         match 'other'
             extend part_other
         match 'concrete'
-            extend part_cf
+            extend part_concrete
         match 'meta'
             extend part_meta
         match 'cf'
