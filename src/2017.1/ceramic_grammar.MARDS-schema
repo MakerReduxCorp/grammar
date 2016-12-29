@@ -16,7 +16,7 @@ template workstep_grammar
     describe en 
         title "Ceramics/Glass"
         abstract "Worksteps from the ceramics and glass industry."
-        body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
+        body "The ceramic and glass industries invole the production of materials that are inorganic nonmetalic solids. http://foundation.ceramics.org/  Worksteps should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'other'
             extend work_other
@@ -37,7 +37,7 @@ template work_other
 template part_grammar
     describe en
         title "Ceramics/Glass"
-        abstract "Ceramic materials including glass."
+        abstract "Materials that are inorganic nonmetalic solids. This includes glass."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'

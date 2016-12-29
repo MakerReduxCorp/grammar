@@ -1,9 +1,9 @@
 Paper/Pulp
 ==========
 
-*Worksteps from the paper industry.*
+*Worksteps from the paper and pulp industry.*
 
-The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values.
+http://www.paperindustrymag.com/  The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values.
 
 .. sidebar:: Variations
    

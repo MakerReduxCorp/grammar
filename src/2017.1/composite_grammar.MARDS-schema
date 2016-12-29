@@ -37,14 +37,32 @@ template work_other
 template part_grammar
     describe en
         title "Composites"
-        abstract "Composite materials."
+        abstract "Composites are made from two or more materials with very different properties."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'
             extend part_other
+        match 'concrete'
+            extend part_cf
+        match 'meta'
+            extend part_meta
+        match 'cf'
+            extend part_cf
         match_else
             raise_error 'function does not exist'
 
 template part_other
     describe en
         title "Other"
+
+template part_concrete
+    describe en
+        title "Concrete/Brick"
+
+template part_meta
+    describe en
+        title "Metamaterial"
+
+template part_cf
+    describe en
+        title "Carbon Fiber"

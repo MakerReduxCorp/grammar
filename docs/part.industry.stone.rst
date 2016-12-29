@@ -1,7 +1,7 @@
 Stone/Earth
 ===========
 
-*Materials from stone and sediment.*
+*Materials from stone, granite, and other natural resources taken from the earth.*
 
 The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values.
 

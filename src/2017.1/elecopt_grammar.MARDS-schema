@@ -2,7 +2,7 @@
 
 ## ###############################
 ##
-##     ELECTRICAL/OPTICAL
+##     ELECTRICAL/OPTICAL/SEMICONDUCTOR
 ##
 ## ###############################
 
@@ -14,8 +14,8 @@
 ## #######################
 template workstep_grammar
     describe en 
-        title "Electrical/Optical"
-        abstract "Worksteps from the electronics and optics industry."
+        title "Electrical/Optical/Semiconductor"
+        abstract "Worksteps from the electrical, electronics, and optics industry."
         body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'other'
@@ -37,14 +37,26 @@ template work_other
 template part_grammar
     describe en
         title "Electrical/Optical"
-        abstract "Electrical components, electronic devices, and optics."
+        abstract "Electrical components, electronic devices, semiconductors, and optics."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'
             extend part_other
+        match 'semi'
+            extend part_semi
+        match 'optic'
+            extend part_optic
         match_else
             raise_error 'function does not exist'
 
 template part_other
     describe en
         title "Other"
+
+template part_semi
+    describe en
+        title "Semiconductor"
+
+template part_optic
+    describe en
+        title "Optics and Lasers"

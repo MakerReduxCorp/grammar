@@ -16,17 +16,13 @@ Parts are used in worksteps as both inputs and as outputs.  A part such as 'boar
    There are additional attributes based on **industry** :
    
      * ``adhesive`` - :doc:`part.industry.adhesive`
-     * ``bio`` - :doc:`part.industry.bio`
      * ``ceramic`` - :doc:`part.industry.ceramic`
      * ``chem`` - :doc:`part.industry.chem`
      * ``composite`` - :doc:`part.industry.composite`
-     * ``concrete`` - :doc:`part.industry.concrete`
      * ``elecopt`` - :doc:`part.industry.elecopt`
-     * ``meta`` - :doc:`part.industry.meta`
      * ``metal`` - :doc:`part.industry.metal`
      * ``poly`` - :doc:`part.industry.poly`
      * ``paper`` - :doc:`part.industry.paper`
-     * ``semi`` - :doc:`part.industry.semi`
      * ``stone`` - :doc:`part.industry.stone`
      * ``textile`` - :doc:`part.industry.textile`
      * ``wood`` - :doc:`part.industry.wood`

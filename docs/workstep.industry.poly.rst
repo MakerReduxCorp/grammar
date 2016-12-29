@@ -1,9 +1,9 @@
 Polymer/Plastic
 ===============
 
-*Worksteps from the plastics industry.*
+*Worksteps involving synthetic materials from organic and inorganic polymers.*
 
-The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values.
+http://www.plasticsindustry.org/  The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values.
 
 .. sidebar:: Variations
    

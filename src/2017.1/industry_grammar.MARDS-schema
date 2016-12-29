@@ -3,19 +3,13 @@
         local
     import adhesive_grammar
         local
-    import bio_grammar
-        local
     import ceramic_grammar
         local
     import chem_grammar
         local
     import composite_grammar
         local
-    import concrete_grammar
-        local
     import elecopt_grammar
-        local
-    import meta_grammar
         local
     import metal_grammar
         local
@@ -23,32 +17,12 @@
         local
     import paper_grammar
         local
-    import semi_grammar
-        local
     import stone_grammar
         local
     import textile_grammar
         local
     describe en
         title "Grammar for Worksteps"
-
-## "adhesive": "Adhesive",
-## "bio": "Biopolymers/<wbr>Organics",
-## "ceramic": "Ceramics",
-## "chem": "Chemicals/<wbr>Dyes/<wbr>Finish",
-## "composite": "Composites",
-## "concrete": "Concrete",
-## "elecopt": "Electronic/<wbr>Optical",
-## "metal": "Metal",
-## "meta": "Metamaterial",
-## "poly": "Polymer/<wbr>Plastic",
-## "paper": "Paper/<wbr>Pulp",
-## "semi": "Semiconductor",
-## "stone": "Stone/<wbr>Earth",
-## "textile": "Textile",
-## "wood": "Wood",    
-
-
 
 
 template workstep_grammar
@@ -62,9 +36,6 @@ template workstep_grammar
         match 'adhesive'
             extend workstep_grammar
                 from adhesive_grammar
-        match 'bio'
-            extend workstep_grammar
-                from bio_grammar
         match 'ceramic'
             extend workstep_grammar
                 from ceramic_grammar
@@ -74,15 +45,9 @@ template workstep_grammar
         match 'composite'
             extend workstep_grammar
                 from composite_grammar
-        match 'concrete'
-            extend workstep_grammar
-                from concrete_grammar
         match 'elecopt'
             extend workstep_grammar
                 from elecopt_grammar
-        match 'meta'
-            extend workstep_grammar
-                from meta_grammar
         match 'metal'
             extend workstep_grammar
                 from metal_grammar
@@ -92,9 +57,6 @@ template workstep_grammar
         match 'paper'
             extend workstep_grammar
                 from paper_grammar
-        match 'semi'
-            extend workstep_grammar
-                from semi_grammar
         match 'stone'
             extend workstep_grammar
                 from stone_grammar
@@ -118,9 +80,6 @@ template parts_grammar
         match 'adhesive'
             extend part_grammar
                 from adhesive_grammar
-        match 'bio'
-            extend part_grammar
-                from bio_grammar
         match 'ceramic'
             extend part_grammar
                 from ceramic_grammar
@@ -130,15 +89,9 @@ template parts_grammar
         match 'composite'
             extend part_grammar
                 from composite_grammar
-        match 'concrete'
-            extend part_grammar
-                from concrete_grammar
         match 'elecopt'
             extend part_grammar
                 from elecopt_grammar
-        match 'meta'
-            extend part_grammar
-                from meta_grammar
         match 'metal'
             extend part_grammar
                 from metal_grammar
@@ -148,9 +101,6 @@ template parts_grammar
         match 'paper'
             extend part_grammar
                 from paper_grammar
-        match 'semi'
-            extend part_grammar
-                from semi_grammar
         match 'stone'
             extend part_grammar
                 from stone_grammar

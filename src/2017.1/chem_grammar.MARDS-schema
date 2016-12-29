@@ -14,7 +14,7 @@
 ## #######################
 template workstep_grammar
     describe en 
-        title "Chemicals/<wbr>Dyes/<wbr>Finish"
+        title "Chemicals/Dyes/Finish"
         abstract "Worksteps from the adhesive industry."
         body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
@@ -36,15 +36,27 @@ template work_other
 
 template part_grammar
     describe en
-        title "Chemicals/<wbr>Dyes/<wbr>Finish"
+        title "Chemicals/Dyes/Finish"
         abstract "Chemicals including Dyes and Finishes"
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'
             extend part_other
+        match 'dye'
+            extend part_dye
+        match 'wood_finish'
+            extend part_wood_finish
         match_else
             raise_error 'function does not exist'
 
 template part_other
     describe en
         title "Other"
+
+template part_dye
+    describe en
+        title "Dye"
+
+template part_wood_finish
+    describe en
+        title "Wood Finish"

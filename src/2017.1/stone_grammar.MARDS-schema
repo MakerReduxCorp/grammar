@@ -15,7 +15,7 @@
 template workstep_grammar
     describe en 
         title "Stone/Earth"
-        abstract "Worksteps from the stone and mining industry."
+        abstract "Worksteps from the stone, mining, and excavation industry."
         body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'other'
@@ -37,7 +37,7 @@ template work_other
 template part_grammar
     describe en
         title "Stone/Earth"
-        abstract "Materials from stone and sediment."
+        abstract "Materials from stone, granite, and other natural resources taken from the earth."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'

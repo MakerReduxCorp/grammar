@@ -16,17 +16,13 @@ A workstep is a description of what must be *done* to completely build a part. W
    There are additional attributes based on **industry** :
    
      * ``adhesive`` - :doc:`workstep.industry.adhesive`
-     * ``bio`` - :doc:`workstep.industry.bio`
      * ``ceramic`` - :doc:`workstep.industry.ceramic`
      * ``chem`` - :doc:`workstep.industry.chem`
      * ``composite`` - :doc:`workstep.industry.composite`
-     * ``concrete`` - :doc:`workstep.industry.concrete`
      * ``elecopt`` - :doc:`workstep.industry.elecopt`
-     * ``meta`` - :doc:`workstep.industry.meta`
      * ``metal`` - :doc:`workstep.industry.metal`
      * ``poly`` - :doc:`workstep.industry.poly`
      * ``paper`` - :doc:`workstep.industry.paper`
-     * ``semi`` - :doc:`workstep.industry.semi`
      * ``stone`` - :doc:`workstep.industry.stone`
      * ``textile`` - :doc:`workstep.industry.textile`
      * ``wood`` - :doc:`workstep.industry.wood`

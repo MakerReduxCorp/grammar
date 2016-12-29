@@ -1,7 +1,7 @@
-Adhesive
-========
+Adhesive/Sealant
+================
 
-*Adhesive materials such as glues and solvents.*
+*Adhesive materials such as glues, solvents, and sealants.*
 
 The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values.
 

@@ -20,12 +20,42 @@ template workstep_grammar
     search function
         match 'other'
             extend work_other
+        match 'casting'
+            extend work_casting
+        match 'forming'
+            extend work_forming
+        match 'milling'
+            extend work_milling
+        match 'sheet'
+            extend work_sheet
+        match 'weld'
+            extend work_weld
         match_else
             raise_error 'function does not exist'
 
 template work_other
     describe en 
         title "Other"
+
+template work_casting
+    describe en 
+        title "Casting"
+
+template work_forming
+    describe en 
+        title "Forming/Extrusion/Rolling"
+
+template work_milling
+    describe en 
+        title "Milling/Turning"
+
+template work_sheet
+    describe en 
+        title "Sheetwork"
+
+template work_weld
+    describe en 
+        title "Joining/Weld/Rivit"
 
 
 ## #######################
@@ -37,14 +67,44 @@ template work_other
 template part_grammar
     describe en
         title "Metal"
-        abstract "Metals."
+        abstract "Materials made from metal atoms."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'
             extend part_other
+        match 'iron'
+            extend part_iron
+        match 'nickel'
+            extend part_nickel
+        match 'lead'
+            extend part_lead
+        match 'aluminum'
+            extend part_aluminum
+        match 'zinc'
+            extend part_zinc
         match_else
             raise_error 'function does not exist'
 
 template part_other
     describe en
         title "Other"
+
+template part_iron
+    describe en
+        title "Iron/Steel/Alloys"
+
+template part_nickel
+    describe en
+        title "Nickel/Alloys"
+
+template part_lead
+    describe en
+        title "Lead/Alloys"
+
+template part_aluminum
+    describe en
+        title "Aluminum/Alloys"
+
+template part_zinc
+    describe en
+        title "Zinc/Alloys"

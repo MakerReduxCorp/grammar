@@ -1,5 +1,5 @@
-Chemicals/<wbr>Dyes/<wbr>Finish
-===============================
+Chemicals/Dyes/Finish
+=====================
 
 *Worksteps from the adhesive industry.*
 

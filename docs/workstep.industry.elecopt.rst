@@ -1,7 +1,7 @@
-Electrical/Optical
-==================
+Electrical/Optical/Semiconductor
+================================
 
-*Worksteps from the electronics and optics industry.*
+*Worksteps from the electrical, electronics, and optics industry.*
 
 The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values.
 

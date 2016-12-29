@@ -1,9 +1,9 @@
-Adhesive
-========
+Adhesive/Sealant
+================
 
-*Worksteps from the adhesive industry.*
+*Worksteps from the adhesives & sealants industry.*
 
-The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values.
+http://www.adhesivesmag.com/  The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values.
 
 .. sidebar:: Variations
    

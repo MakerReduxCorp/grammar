@@ -15,8 +15,8 @@
 template workstep_grammar
     describe en 
         title "Polymer/Plastic"
-        abstract "Worksteps from the plastics industry."
-        body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
+        abstract "Worksteps involving synthetic materials from organic and inorganic polymers."
+        body "http://www.plasticsindustry.org/  The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'other'
             extend work_other
@@ -38,13 +38,39 @@ template part_grammar
     describe en
         title "Polymer/Plastic"
         abstract "Materials from plastic and polymers."
-        body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
+        body "This industry covers any synthetic material made from organic or inorganic polymers. The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'
             extend part_other
+        match 'cellulose'
+            extend part_cellulose
+        match 'starch_rubber'
+            extend part_starch_rubber
+        match 'abs'
+            extend part_abs
+        match 'silicone'
+            extend part_silicone
         match_else
             raise_error 'function does not exist'
 
 template part_other
     describe en
         title "Other"
+        abstract "A polymer/plastic not found in other categories."
+
+template part_cellulose
+    describe en
+        title "Cellulose"
+        abstract "Tough polymers made from organic cellulose; such as cotton."
+
+template part_starch_rubber
+    describe en
+        title "Starch/Rubber"
+
+template part_abs
+    describe en
+        title "ABS"
+
+template part_silicone
+    describe en
+        title "Silicone"

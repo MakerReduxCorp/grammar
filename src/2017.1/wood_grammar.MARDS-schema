@@ -64,6 +64,10 @@ template part_grammar
     search category
         match 'lumber'
             extend lumber
+        match 'round_stock'
+            extend round_stock
+        match 'panel'
+            extend panel
         match 'other'
             extend part_other
         match_else
@@ -118,6 +122,67 @@ template lumber
                 choice S2S
                 choice S3S
                 choice S4S 
+
+template round_stock
+    describe en
+        title "Round stock/dowels"
+    name diameter
+        required
+        value
+            required
+            type length
+        describe en
+            title "nominal diameter of stock"
+    name minimum_length
+        value
+            required
+            type length
+    name species
+        required
+        value
+            required
+            extend species_choice
+                
+template panel
+    describe en 
+        title "Flat stock (Plywood, MDF, etc)"
+    name top_surface
+        value
+            required
+            extend species_choice
+    name bottom_surface
+        value
+            required
+            extend species_choice
+    name top_quality
+        value
+            required
+            type radio_select
+                choice fine
+                choice medium
+                choice course
+    name bottom_quality
+        value
+            type radio_select 
+                choice fine
+                choice medium
+                choice course
+    name width
+        value
+            type length
+    name length
+        value
+            type length
+    name thickness
+        value
+            required
+            type length
+    name core
+        value
+            required
+            type radio_select
+                choice MDF
+                choice layer
 
 template part_other
     describe en

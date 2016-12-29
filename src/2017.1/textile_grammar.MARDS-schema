@@ -37,14 +37,39 @@ template work_other
 template part_grammar
     describe en
         title "Textile"
-        abstract "Textile materials."
+        abstract "Textile materials are fibers and products woven/felted/formed from such fibers."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'
             extend part_other
+        match 'thread'
+            extend part_thread
+        match 'fabric'
+            extend part_fabric
+        match 'felt'
+            extend part_felt
+        match 'rope'
+            extend part_rope
         match_else
             raise_error 'function does not exist'
 
 template part_other
     describe en
         title "Other"
+
+template part_thread
+    describe en
+        title "Thread/Yarn"
+
+template part_fabric
+    describe en
+        title "Fabric/Cloth/Wool"
+
+template part_felt
+    describe en
+        title "Felt/Velvet"
+
+template part_rope
+    describe en
+        title "Rope/Twine"
+

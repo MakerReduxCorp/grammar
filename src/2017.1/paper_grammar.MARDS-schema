@@ -2,7 +2,7 @@
 
 ## ###############################
 ##
-##     ADHESIVES
+##     PAPER/PULP
 ##
 ## ###############################
 
@@ -15,8 +15,8 @@
 template workstep_grammar
     describe en 
         title "Paper/Pulp"
-        abstract "Worksteps from the paper industry."
-        body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
+        abstract "Worksteps from the paper and pulp industry."
+        body "http://www.paperindustrymag.com/  The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'other'
             extend work_other
