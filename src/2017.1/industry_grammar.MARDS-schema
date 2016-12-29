@@ -15,9 +15,9 @@
         local
     import elecopt_grammar
         local
-    import metal_grammar
-        local
     import meta_grammar
+        local
+    import metal_grammar
         local
     import poly_grammar
         local
@@ -77,6 +77,30 @@ template workstep_grammar
         match 'concrete'
             extend workstep_grammar
                 from concrete_grammar
+        match 'elecopt'
+            extend workstep_grammar
+                from elecopt_grammar
+        match 'meta'
+            extend workstep_grammar
+                from meta_grammar
+        match 'metal'
+            extend workstep_grammar
+                from metal_grammar
+        match 'poly'
+            extend workstep_grammar
+                from poly_grammar
+        match 'paper'
+            extend workstep_grammar
+                from paper_grammar
+        match 'semi'
+            extend workstep_grammar
+                from semi_grammar
+        match 'stone'
+            extend workstep_grammar
+                from stone_grammar
+        match 'textile'
+            extend workstep_grammar
+                from textile_grammar
         match 'wood'
             extend workstep_grammar
                 from wood_grammar
@@ -109,6 +133,30 @@ template parts_grammar
         match 'concrete'
             extend part_grammar
                 from concrete_grammar
+        match 'elecopt'
+            extend part_grammar
+                from elecopt_grammar
+        match 'meta'
+            extend part_grammar
+                from meta_grammar
+        match 'metal'
+            extend part_grammar
+                from metal_grammar
+        match 'poly'
+            extend part_grammar
+                from poly_grammar
+        match 'paper'
+            extend part_grammar
+                from paper_grammar
+        match 'semi'
+            extend part_grammar
+                from semi_grammar
+        match 'stone'
+            extend part_grammar
+                from stone_grammar
+        match 'textile'
+            extend part_grammar
+                from textile_grammar
         match 'wood'
             extend part_grammar
                 from wood_grammar

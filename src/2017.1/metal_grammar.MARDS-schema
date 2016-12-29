@@ -1,8 +1,8 @@
-#!MARDS_schema_en_1.0 adhesive_grammar_1.0
+#!MARDS_schema_en_1.0 metal_grammar_1.0
 
 ## ###############################
 ##
-##     ADHESIVES
+##     METAL
 ##
 ## ###############################
 
@@ -14,8 +14,8 @@
 ## #######################
 template workstep_grammar
     describe en 
-        title "Adhesive"
-        abstract "Worksteps from the adhesive industry."
+        title "Metal"
+        abstract "Worksteps from the metal industry."
         body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
     search function
         match 'other'
@@ -36,8 +36,8 @@ template work_other
 
 template part_grammar
     describe en
-        title "Wood"
-        abstract "Materials from Trees (other than paper)."
+        title "Metal"
+        abstract "Metals."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match 'other'
