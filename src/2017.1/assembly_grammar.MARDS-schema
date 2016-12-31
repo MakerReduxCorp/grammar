@@ -1,0 +1,51 @@
+#!MARDS_schema_en_1.0 assembly_grammar_1.0
+
+## ###############################
+##
+##     ASSEMBLY
+##
+## ###############################
+
+
+## #######################
+##
+## Worksteps
+##
+## #######################
+template workstep_grammar
+    describe en 
+        title "Assembly/Shipping/Storage"
+        abstract "Worksteps involving shipping, assembly, packing, storage, and handling."
+        body "The workstep should be assigned a `function`. See the sidebar to the left for a list of valid `function` values."
+    search function
+        match 'assemble'
+            extend work_assemble
+        match 'package'
+            extend work_package
+        match_else
+            raise_error 'function does not exist'
+
+template work_assemble
+    describe en 
+        title "Assemble"
+
+template work_package
+    describe en 
+        title "Package"
+
+
+
+## #######################
+##
+## Parts
+##
+## #######################
+
+template part_grammar
+    describe en
+        title "Adhesive/Sealant"
+        abstract "Adhesive materials such as glues, solvents, and sealants."
+        body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
+    search category
+        match_else
+            raise_error 'function does not exist'

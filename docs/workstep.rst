@@ -16,6 +16,7 @@ A workstep is a description of what must be *done* to completely build a part. W
    There are additional attributes based on **industry** :
    
      * ``adhesive`` - :doc:`workstep.industry.adhesive`
+     * ``assembly`` - :doc:`workstep.industry.assembly`
      * ``ceramic`` - :doc:`workstep.industry.ceramic`
      * ``chem`` - :doc:`workstep.industry.chem`
      * ``composite`` - :doc:`workstep.industry.composite`
@@ -206,14 +207,7 @@ Attributes
     
 .. raw:: html
 
-    <pre><b>industry</b> <i>string</i></pre>
-
-..
-
-    
-.. raw:: html
-
-    <pre><b>function</b> <i>string</i></pre>
+    <pre><b>function</b> <i>label</i></pre>
 
 ..
 

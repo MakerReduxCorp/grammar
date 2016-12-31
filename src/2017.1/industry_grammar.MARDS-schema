@@ -1,7 +1,7 @@
 #!MARDS_schema_en_1.0 industry_grammar_1.0
-    import wood_grammar
-        local
     import adhesive_grammar
+        local
+    import assembly_grammar
         local
     import ceramic_grammar
         local
@@ -21,6 +21,8 @@
         local
     import textile_grammar
         local
+    import wood_grammar
+        local
     describe en
         title "Grammar for Worksteps"
 
@@ -36,6 +38,9 @@ template workstep_grammar
         match 'adhesive'
             extend workstep_grammar
                 from adhesive_grammar
+        match 'assembly'
+            extend workstep_grammar
+                from assembly_grammar
         match 'ceramic'
             extend workstep_grammar
                 from ceramic_grammar
@@ -80,6 +85,9 @@ template parts_grammar
         match 'adhesive'
             extend part_grammar
                 from adhesive_grammar
+        match 'assembly'
+            extend part_grammar
+                from assembly_grammar
         match 'ceramic'
             extend part_grammar
                 from ceramic_grammar
