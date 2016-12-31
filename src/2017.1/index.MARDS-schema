@@ -283,13 +283,13 @@ name workstep
                 required
                 type duration
                 default 1m
-    ## name industry
-    ## was formerly called 'station'
-    ##    treatment one
-    ##    required
-    ##    value
-    ##        type label
-    ##        required
+    name industry
+        ## was formerly called 'station'
+        treatment one
+        required
+        value
+            type label
+            required
     extend workstep_grammar
         from industry_grammar
     name function
@@ -387,6 +387,13 @@ name part
                 type price
                 default $0.00
     name category
+        treatment one
+        required
+        value
+            type label
+            required
+    name industry
+        ## was formerly called 'station'
         treatment one
         required
         value

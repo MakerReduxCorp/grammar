@@ -207,6 +207,13 @@ Attributes
     
 .. raw:: html
 
+    <pre><b>industry</b> <i>label</i></pre>
+
+..
+
+    
+.. raw:: html
+
     <pre><b>function</b> <i>label</i></pre>
 
 ..

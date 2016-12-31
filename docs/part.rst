@@ -141,3 +141,10 @@ Attributes
 ..
 
     
+.. raw:: html
+
+    <pre><b>industry</b> <i>label</i></pre>
+
+..
+
+    
