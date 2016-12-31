@@ -43,8 +43,8 @@ template work_package
 
 template part_grammar
     describe en
-        title "Adhesive/Sealant"
-        abstract "Adhesive materials such as glues, solvents, and sealants."
+        title "Assembly/Shipping/Storage"
+        abstract "Materials specific to Assembly/Shipping/Storage."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
         match_else
