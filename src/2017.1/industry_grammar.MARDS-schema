@@ -85,9 +85,9 @@ template parts_grammar
         match 'adhesive'
             extend part_grammar
                 from adhesive_grammar
-        ## match 'assembly'
-        ##     extend part_grammar
-        ##         from assembly_grammar
+        match 'assembly'
+            extend part_grammar
+                from assembly_grammar
         match 'ceramic'
             extend part_grammar
                 from ceramic_grammar

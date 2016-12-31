@@ -47,5 +47,11 @@ template part_grammar
         abstract "Materials specific to Assembly/Shipping/Storage."
         body "The part should be assigned a `category`. See the sidebar to the left for a list of valid `category` values."
     search category
+        match 'misc'
+            extend part_misc
         match_else
             raise_error 'function does not exist'
+
+template part_misc
+    describe en 
+        title "Misc"
