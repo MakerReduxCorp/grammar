@@ -116,7 +116,7 @@ Attributes
     
 .. raw:: html
 
-    <pre><b>amount</b> <i>decimal</i></pre>
+    <pre><b>amount</b> <i>float</i></pre>
 
 ..
 
@@ -125,7 +125,7 @@ Attributes
     
 .. raw:: html
 
-    <pre><b>amount_unit</b> <i>text</i></pre>
+    <pre><b>amount_unit</b> <i>string</i></pre>
 
 ..
 

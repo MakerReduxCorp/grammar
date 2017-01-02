@@ -248,7 +248,7 @@ name workstep
     name amount
         treatment one
         value
-            type decimal
+            type float
             required
             default 1.0
         describe en
@@ -256,7 +256,7 @@ name workstep
     name amount_unit
         treatment one
         value
-            type text
+            type string
             required
             default hr
         describe en
@@ -420,7 +420,7 @@ name part
     name amount
         treatment one
         value
-            type decimal
+            type float
             required
             default 1.0
         describe en
@@ -428,7 +428,7 @@ name part
     name amount_unit
         treatment one
         value
-            type text
+            type string
             required
             default each
         describe en
