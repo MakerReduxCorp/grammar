@@ -95,21 +95,21 @@ Attributes
 
     *How many copies of this part will be used to produce one unit of product. Must be a whole positive number.*
     
-    For an example of use of amount vs qty:
+    For an example of how to use of amount vs qty:
     
     
     
-    part xyz
+        part xyz
     
-        qty 3
+            qty 3
     
-        amount 2.1
+            amount 2.1
     
-        amount_unit g
+            amount_unit g
     
     
     
-    Would be interpreted as: a 'xyz part' has 2.1g of material and is needed 3 times.
+    Would be interpreted as: a "xyz" part has 2.1g of material and is needed 3 times.
     
     So a total of 6.3g is used to produce one product.
     
@@ -120,7 +120,7 @@ Attributes
 
 ..
 
-    *The amount of *substance* that will be used to embody one unit of part.*
+    *The amount of __substance__ that will be used to embody one unit of part.*
     
     
 .. raw:: html

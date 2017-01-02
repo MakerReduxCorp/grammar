@@ -152,21 +152,21 @@ Attributes
 
     *How many times must this one unit of work be repeated to complete a single product. Must be a whole positive number.*
     
-    For an example of use of amount vs repeat:
+    For an example of how to use of amount vs repeat:
     
     
     
-    workstep abc
+        workstep abc
     
-        repeat 3
+            repeat 3
     
-        amount 0.5
+            amount 0.5
     
-        amount_unit hr
+            amount_unit hr
     
     
     
-    Would be interpreted as: a 'workstep abc' takes 0.5 hours and is repeated 3 times.
+    Would be interpreted as: an "abc" workstep takes 0.5 hours and is repeated 3 times.
     
     So a total of 1.5 hrs is needed to produce one product.
     
@@ -177,7 +177,7 @@ Attributes
 
 ..
 
-    *The amount of *something* that will be used to embody one unit of work. It is often measured in hours when used for human labor.*
+    *The amount of __something__ that will be used to embody one unit of work. It is often measured in hours when used for human labor.*
     
     
 .. raw:: html
@@ -186,7 +186,7 @@ Attributes
 
 ..
 
-    *For the amount needed, what is the unit of measurement. Defaults to hours.*
+    *For the amount needed, what is the unit of measurement. Defaults to hr (hours.)*
     
     
 .. raw:: html
