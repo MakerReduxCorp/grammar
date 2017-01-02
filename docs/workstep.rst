@@ -150,6 +150,44 @@ Attributes
 
 ..
 
+    *How many times must this one unit of work be repeated to complete a single product. Must be a whole positive number.*
+    
+    For an example of use of amount vs repeat:
+    
+    
+    
+    workstep abc
+    
+        repeat 3
+    
+        amount 0.5
+    
+        amount_unit hr
+    
+    
+    
+    Would be interpreted as: a 'workstep abc' takes 0.5 hours and is repeated 3 times.
+    
+    So a total of 1.5 hrs is needed to produce one product.
+    
+    
+.. raw:: html
+
+    <pre><b>amount</b> <i>decimal</i></pre>
+
+..
+
+    *The amount of *something* that will be used to embody one unit of work. It is often measured in hours when used for human labor.*
+    
+    
+.. raw:: html
+
+    <pre><b>amount_unit</b> <i>text</i></pre>
+
+..
+
+    *For the amount needed, what is the unit of measurement. Defaults to hours.*
+    
     
 .. raw:: html
 
@@ -170,6 +208,13 @@ Attributes
             
         .. raw:: html
         
+            <pre><b>prototype_setup</b> <i>price</i></pre>
+        
+        ..
+        
+            
+        .. raw:: html
+        
             <pre><b>prototype_time</b> <i>duration</i></pre>
         
         ..
@@ -184,6 +229,13 @@ Attributes
             
         .. raw:: html
         
+            <pre><b>pilot_setup</b> <i>price</i></pre>
+        
+        ..
+        
+            
+        .. raw:: html
+        
             <pre><b>pilot_time</b> <i>duration</i></pre>
         
         ..
@@ -192,6 +244,13 @@ Attributes
         .. raw:: html
         
             <pre><b>production_price</b> <i>price</i></pre>
+        
+        ..
+        
+            
+        .. raw:: html
+        
+            <pre><b>production_setup</b> <i>price</i></pre>
         
         ..
         

@@ -234,6 +234,33 @@ name workstep
         value
             required
             type qty
+        describe en
+            abstract "How many times must this one unit of work be repeated to complete a single product. Must be a whole positive number."
+            body "For an example of use of amount vs repeat:"
+            body ""
+            body "workstep abc"
+            body "    repeat 3"
+            body "    amount 0.5"
+            body "    amount_unit hr"
+            body ""
+            body "Would be interpreted as: a 'workstep abc' takes 0.5 hours and is repeated 3 times."
+            body "So a total of 1.5 hrs is needed to produce one product."
+    name amount
+        treatment one
+        value
+            type decimal
+            required
+            default 1.0
+        describe en
+            abstract "The amount of *something* that will be used to embody one unit of work. It is often measured in hours when used for human labor."
+    name amount_unit
+        treatment one
+        value
+            type text
+            required
+            default hr
+        describe en
+            abstract "For the amount needed, what is the unit of measurement. Defaults to hours."
     name estimates
         treatment one
         required
@@ -242,6 +269,13 @@ name workstep
         describe en
             abstract "Unofficial budgetary pricing."
         name prototype_price
+            treatment one
+            required
+            value
+                required
+                type price
+                default $0.00
+        name prototype_setup
             treatment one
             required
             value
@@ -262,6 +296,13 @@ name workstep
                 required
                 type price
                 default $0.00
+        name pilot_setup
+            treatment one
+            required
+            value
+                required
+                type price
+                default $0.00
         name pilot_time
             treatment one
             required
@@ -270,6 +311,13 @@ name workstep
                 type duration
                 default 5m
         name production_price
+            treatment one
+            required
+            value
+                required
+                type price
+                default $0.00
+        name production_setup
             treatment one
             required
             value
@@ -358,6 +406,33 @@ name part
                 min 1
             required
             default 1
+        describe en
+            abstract "How many copies of this part will be used to produce one unit of product. Must be a whole positive number."
+            body "For an example of use of amount vs qty:"
+            body ""
+            body "part xyz"
+            body "    qty 3"
+            body "    amount 2.1"
+            body "    amount_unit g"
+            body ""
+            body "Would be interpreted as: a 'xyz part' has 2.1g of material and is needed 3 times."
+            body "So a total of 6.3g is used to produce one product."
+    name amount
+        treatment one
+        value
+            type decimal
+            required
+            default 1.0
+        describe en
+            abstract "The amount of *substance* that will be used to embody one unit of part."
+    name amount_unit
+        treatment one
+        value
+            type text
+            required
+            default each
+        describe en
+            abstract "For the amount needed, what is the unit of measurement."
     name estimates
         treatment one
         required
@@ -372,6 +447,13 @@ name part
                 required
                 type price
                 default $0.00
+        name prototype_setup
+            treatment one
+            required
+            value
+                required
+                type price
+                default $0.00
         name pilot_price
             treatment one
             required
@@ -379,7 +461,21 @@ name part
                 required
                 type price
                 default $0.00
+        name pilot_setup
+            treatment one
+            required
+            value
+                required
+                type price
+                default $0.00
         name production_price
+            treatment one
+            required
+            value
+                required
+                type price
+                default $0.00
+        name production_setup
             treatment one
             required
             value

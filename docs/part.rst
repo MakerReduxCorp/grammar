@@ -93,6 +93,44 @@ Attributes
 
 ..
 
+    *How many copies of this part will be used to produce one unit of product. Must be a whole positive number.*
+    
+    For an example of use of amount vs qty:
+    
+    
+    
+    part xyz
+    
+        qty 3
+    
+        amount 2.1
+    
+        amount_unit g
+    
+    
+    
+    Would be interpreted as: a 'xyz part' has 2.1g of material and is needed 3 times.
+    
+    So a total of 6.3g is used to produce one product.
+    
+    
+.. raw:: html
+
+    <pre><b>amount</b> <i>decimal</i></pre>
+
+..
+
+    *The amount of *substance* that will be used to embody one unit of part.*
+    
+    
+.. raw:: html
+
+    <pre><b>amount_unit</b> <i>text</i></pre>
+
+..
+
+    *For the amount needed, what is the unit of measurement.*
+    
     
 .. raw:: html
 
@@ -113,6 +151,13 @@ Attributes
             
         .. raw:: html
         
+            <pre><b>prototype_setup</b> <i>price</i></pre>
+        
+        ..
+        
+            
+        .. raw:: html
+        
             <pre><b>pilot_price</b> <i>price</i></pre>
         
         ..
@@ -120,7 +165,21 @@ Attributes
             
         .. raw:: html
         
+            <pre><b>pilot_setup</b> <i>price</i></pre>
+        
+        ..
+        
+            
+        .. raw:: html
+        
             <pre><b>production_price</b> <i>price</i></pre>
+        
+        ..
+        
+            
+        .. raw:: html
+        
+            <pre><b>production_setup</b> <i>price</i></pre>
         
         ..
         
